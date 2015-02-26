@@ -1,0 +1,25 @@
+{
+  "name": "PollsClient",
+  "version": "1.0.0",
+  "description": "Polls client in AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "Polls",
+    "Angular"
+  ],
+  "author": "Vincenzo Chianese",
+  "license": "MIT",
+  "jspm": {
+    "directories": {
+      "lib": ".",
+      "packages": "jspm_packages"
+    }
+  }
+}
