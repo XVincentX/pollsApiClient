@@ -1,9 +1,9 @@
 import angular      from 'angular'
 import _            from 'lodash'
+import register     from './utils/register'
 
-import register from './utils/register'    
 import 'restangular'
-import 'text'
+
 
 
 window._ = _; //Pollute global namespace to make it avaiable to restangular
