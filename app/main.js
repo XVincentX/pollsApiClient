@@ -1,4 +1,9 @@
-import angular from 'angular';
-import "restangular";
+import angular from "angular"
+import _ from "lodash"
+import "restangular"
+import "text"
+import {applicationModule} from "./directives/application/application"
 
-var polls = angular.module("polls", ["restangular"]);
+window._ = _; //Pollute global namespace to make it avaiable to restangular
+
+export var application = angular.module("pollsClient", ["restangular", applicationModule.name]);
