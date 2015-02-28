@@ -10,6 +10,5 @@ class pollsService
     }
 };
 
-var app = angular.module("pollsClient");
 
-export var PollsService = app.service("PollsService", ["Restangular", pollsService]);
+export {pollsService}

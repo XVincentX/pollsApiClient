@@ -1,18 +1,14 @@
-import angular from "angular"
-import template from "./application.template.html!text"
+//import template from "./application.template.html!text"
+      
     
-    
-export var applicationModule = angular.module('applicationModule', [
-]).directive('application', [
-  function application() {
-    return {
-      restrict: 'E',
-      template: template,
-      controller: angular.noop,
-      controllerAs: 'ctrl',
-      bindToController: true,
-      scope: {
-      }
-    };
-  }
-]);
+class applicationDirective
+{
+    constructor()
+    {
+        this.restrict = 'E'
+        this.scope = {}
+        this.template = '<h1>Nasino Pariosino</h1>'
+    }
+}
+
+export {applicationDirective}
