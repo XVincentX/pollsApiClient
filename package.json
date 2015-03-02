@@ -2,7 +2,7 @@
   "name": "PollsClient",
   "version": "1.0.0",
   "description": "Polls client in AngularJS",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "gulp test"
   },
