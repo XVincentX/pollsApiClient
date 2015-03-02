@@ -6,4 +6,4 @@ var express = require('express')
 app.use(cors());
 app.use(serveStatic('./', {'index': ['index.html']}));
 
-app.listen(1234, function(){});
+app.listen(process.env.port || 1234, function(){});
