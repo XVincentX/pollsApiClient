@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/XVincentX/pollsApiClient"
   },
   "keywords": [
     "Polls",
@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-angular-templatecache": "^1.5.0"
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-git": "^1.0.0"
   },
   "dependencies": {
     "cors": "^2.5.3",
