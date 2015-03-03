@@ -31,7 +31,8 @@
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-angular-templatecache": "^1.5.0",
-    "gulp-git": "^1.0.0"
+    "gulp-git": "^1.0.0",
+    "gulp-run": "^1.6.6"
   },
   "dependencies": {
     "cors": "^2.5.3",
