@@ -123,7 +123,7 @@ fi
   exitWithMessageOnError "installing jspm failed"
   ./node_modules/.bin/jspm install
   exitWithMessageOnError "jspm failed"
-  ./node_modules/.bin/jspm bundle app/main --minify
+  ./node_modules/.bin/jspm bundle app/main --minify --inject
   exitWithMessageOnError "jspm bundle-sfx failed"
   cd - > /dev/null
 
