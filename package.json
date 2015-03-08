@@ -29,7 +29,8 @@
     }
   },
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-mocha": "^2.0.0"
   },
   "dependencies": {
     "cors": "^2.5.3",
