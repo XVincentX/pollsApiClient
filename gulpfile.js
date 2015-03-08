@@ -1,10 +1,13 @@
-var gulp  = require("gulp");
+var gulp = require("gulp");
 var mocha = require("gulp-mocha");
 
-gulp.task("default",function(){});
+gulp.task("default", function () {});
 
-gulp.task("test",function()
-{
-    return gulp.src('./tests/*.js', {read: false})
-        .pipe(mocha({reporter: 'nyan'}));
+gulp.task("test", function () {
+    return gulp.src('./tests/*.js', {
+            read: false
+        })
+        .pipe(mocha({
+            reporter: 'nyan'
+        }));
 });
