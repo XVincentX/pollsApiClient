@@ -1,7 +1,7 @@
-var assert = require("assert");
-
-describe("Nasino", function () {
-    it("should touch nasino", function () {
-        assert.equal(true, true);
+describe("A test suite", function () {
+    beforeEach(function () {});
+    afterEach(function () {});
+    it('should fail', function () {
+        expect(true).to.be.false;
     });
 });

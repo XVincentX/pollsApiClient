@@ -29,8 +29,12 @@
     }
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-mocha": "^2.0.0"
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10",
+    "karma-requirejs": "^0.2.2",
+    "mocha": "^2.2.1",
+    "requirejs": "^2.1.16"
   },
   "dependencies": {
     "cors": "^2.5.3",
