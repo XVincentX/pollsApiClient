@@ -15,6 +15,6 @@ import pollsService           from './services/polls'
 angular.module('pollsClient', ['restangular'])
 
 register('pollsClient')
-    .directive('application', applicationDirective)
-    .directive('pollsList', pollsList)
-    .service('pollsService', pollsService)
+    .directive( 'application',  applicationDirective)
+    .directive( 'pollslist',    pollsList)
+    .service(   'pollsservice', pollsService)
