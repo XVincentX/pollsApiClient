@@ -13,7 +13,13 @@ import {
 }
 from './directives/application/application'
 
+import {
+    pollsService
+}
+from './services/polls'
+
 angular.module('pollsClient', ['restangular'])
 
 register('pollsClient')
     .directive('application', applicationDirective)
+    .service('pollsService', pollsService)
