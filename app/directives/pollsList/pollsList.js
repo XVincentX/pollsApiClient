@@ -1,6 +1,6 @@
-import template from "./application.template.html!text"
-        
-export default class applicationDirective
+import template from './pollsList.template.html!text'
+
+export default class pollsListDirective
 {
     constructor()
     {

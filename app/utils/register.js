@@ -126,7 +126,7 @@ export default function register(appName) {
      * @returns {Function}
      */
     function _cloneFunction(original) {
-        return function() {
+        return function () {
             return original.apply(this, arguments);
         };
     }

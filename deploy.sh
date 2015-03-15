@@ -117,7 +117,7 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
-# 4. Install jspm packages
+# 4. Install jspm packages and bundle to a single file
   cd "$DEPLOYMENT_TARGET"
   eval $NPM_CMD install jspm
   exitWithMessageOnError "installing jspm failed"

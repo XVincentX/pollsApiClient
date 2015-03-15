@@ -29,7 +29,18 @@
     }
   },
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "babel": "^4.7.12",
+    "es6-module-loader": "^0.15.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-debug": "^0.1.2",
+    "karma-requirejs": "^0.2.2",
+    "karma-systemjs": "^0.1.6",
+    "mocha": "^2.2.1",
+    "requirejs": "^2.1.16",
+    "systemjs": "^0.15.0"
   },
   "dependencies": {
     "cors": "^2.5.3",
