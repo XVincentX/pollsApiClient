@@ -1,4 +1,4 @@
-export class pollsListController
+export default class pollsListController
 {
     constructor()
     {

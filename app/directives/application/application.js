@@ -1,7 +1,7 @@
 import template from "./application.template.html!text";
       
     
-export class applicationDirective
+export default class applicationDirective
 {
     constructor()
     {

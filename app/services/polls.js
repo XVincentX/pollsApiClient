@@ -1,6 +1,6 @@
 import "restangular"
 
-export class pollsService {
+export default class pollsService {
 
     constructor(Restangular) {
         this.restangular = Restangular;
