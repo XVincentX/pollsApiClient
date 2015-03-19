@@ -29,7 +29,12 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
 # Testing
 
 We use **karma** as test runner, and **mocha** as testing framework.
-Tests are not working ( I do not know the reason yet :( ), docs to be updated once they will run.
+
+All the stuff gets transpiled using karma-systemjs, no minification and bundling gets executed.
+
+```bash
+karma start & karma run
+```
 
 # Deploy
 
