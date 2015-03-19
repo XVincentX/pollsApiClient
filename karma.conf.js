@@ -26,9 +26,7 @@ module.exports = function (config) {
             configFile: './config.js',
 
             // File patterns for your application code, dependencies, and test suites
-            files: [
-        'app/*/**/*.js'
-    ],
+            files: ['app/**/*.js', 'tests/**/*.js'],
             config: {
                 transpiler: 'babel'
             },
@@ -70,6 +68,6 @@ module.exports = function (config) {
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
-        singleRun: false
+        singleRun: true
     });
 };
