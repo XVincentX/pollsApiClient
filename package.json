@@ -4,7 +4,7 @@
   "description": "Polls client in AngularJS",
   "main": "server.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
