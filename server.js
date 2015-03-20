@@ -4,6 +4,6 @@ var express = require('express')
   , app = express();
 
 app.use(cors());
-app.use(serveStatic('./', {'index': ['index.html']}));
+app.use(express.static('./', {'index': ['index.html']}));
 
 app.listen(process.env.port || 1234, function(){ console.log("Server stared..."); });
