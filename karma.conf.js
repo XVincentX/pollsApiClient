@@ -10,7 +10,7 @@ module.exports = function (config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['systemjs', 'requirejs', 'mocha', 'chai'],
+        frameworks: ['jspm', 'requirejs', 'mocha', 'chai'],
 
 
         // list of files / patterns to load in the browser
@@ -21,19 +21,10 @@ module.exports = function (config) {
         exclude: [
     ],
 
-        systemjs: {
-            // Path to your SystemJS configuration file
-            configFile: './config.js',
-
-            // File patterns for your application code, dependencies, and test suites
-            files: ['app/**/*.js', 'tests/**/*.js'],
-            config: {
-                transpiler: 'babel'
-            },
-            // Specify the suffix used for test suite file names.  Defaults to .test.js, .spec.js, _test.js, and _spec.js
-            testFileSuffix: '-test.js'
+        jspm: {
+            loadFiles: ['app/**/*.js', 'test/**/*.js']
         },
-
+        
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {},

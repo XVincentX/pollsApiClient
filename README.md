@@ -33,7 +33,7 @@ We use **karma** as test runner, and **mocha** as testing framework.
 All the stuff gets transpiled using karma-systemjs, no minification and bundling gets executed.
 
 ```bash
-karma start & karma run
+npm test
 ```
 
 # Deploy
