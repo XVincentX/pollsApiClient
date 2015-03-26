@@ -4,7 +4,7 @@
   "description": "Polls client in AngularJS",
   "main": "server.js",
   "scripts": {
-    "test": "karma start"
+    "test": "webdriver-manager start & karma start && protractor protractor.conf.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "babel": "^4.7.13",
     "es6-module-loader": "^0.15.0",
     "karma": "^0.12.31",
+    "karma-babel-preprocessor": "^4.0.1",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.1.7",
     "karma-jspm": "^1.1.4",

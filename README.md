@@ -28,9 +28,9 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
 
 # Testing
 
-We use **karma** as test runner, and **mocha** as testing framework.
+We use **karma** as test runner (unit test), **protractor** for E2E tests, and **mocha** as general testing framework.
 
-All the stuff gets transpiled using karma-systemjs, no minification and bundling gets executed.
+All the stuff gets transpiled using karma-jspm, no minification and bundling gets executed.
 
 ```bash
 npm test
