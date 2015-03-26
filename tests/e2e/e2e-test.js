@@ -1,5 +1,5 @@
-describe('angularjs homepage todo list', () => {
-  it('should add a todo', () => {
+describe('angularjs homepage todo list', function()  {
+  it('should add a todo', function()  {
     browser.get('http://www.angularjs.org');
 
     element(by.model('todoText')).sendKeys('write a protractor test');

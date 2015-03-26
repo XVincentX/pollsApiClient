@@ -4,7 +4,8 @@
   "description": "Polls client in AngularJS",
   "main": "server.js",
   "scripts": {
-    "test": "webdriver-manager start & karma start && protractor protractor.conf.js"
+    "test": "karma start && protractor protractor.conf.js",
+    "postinstall": "./node_modules/.bin/webdriver-manager update"
   },
   "repository": {
     "type": "git",
