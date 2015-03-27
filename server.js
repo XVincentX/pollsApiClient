@@ -1,6 +1,5 @@
 var express = require('express')
   , cors = require('cors')
-  , serveStatic = require('serve-static')
   , app = express();
 
 app.use(cors());
