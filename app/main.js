@@ -1,5 +1,5 @@
-import angular from 'angular'
-import _ from 'lodash'
+import angular  from 'angular'
+import _        from 'lodash'
 import register from './utils/register'
 
 import 'restangular'
