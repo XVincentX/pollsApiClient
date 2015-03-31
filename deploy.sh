@@ -112,7 +112,7 @@ selectNodeVersion
 # 3. Install npm packages
 if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd "$DEPLOYMENT_TARGET"
-  eval $NPM_CMD install --production
+  eval $NPM_CMD install --production --ignore-scripts
   exitWithMessageOnError "npm failed"
   cd - > /dev/null
 fi
@@ -125,6 +125,9 @@ fi
   exitWithMessageOnError "jspm failed"
   ./node_modules/.bin/jspm bundle app/main --minify --inject
   exitWithMessageOnError "jspm bundle-sfx failed"
+  eval $NPM_CMD prune --production
+  exitWithMessageOnError "Npm prune failed for production environment"
+  rm -rf ./tests
   cd - > /dev/null
 
 ##################################################################################################################################
