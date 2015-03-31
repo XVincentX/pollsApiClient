@@ -1,7 +1,5 @@
-export default class pollsListController
-{
-    constructor()
-    {
-    
+export default class pollsListController {
+    constructor() {
+
     }
 }

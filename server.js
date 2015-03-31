@@ -1,8 +1,12 @@
-var express = require('express')
-  , cors = require('cors')
-  , app = express();
+var express = require('express'),
+    cors = require('cors'),
+    app = express();
 
 app.use(cors());
-app.use(express.static('./', {'index': ['index.html']}));
+app.use(express.static('./', {
+    'index': ['index.html']
+}));
 
-app.listen(process.env.port || 1234, function(){ console.log("Server stared..."); });
+app.listen(process.env.port || 1234, function () {
+    console.log("Server stared...");
+});
