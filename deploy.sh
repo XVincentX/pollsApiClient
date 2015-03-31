@@ -125,6 +125,9 @@ fi
   exitWithMessageOnError "jspm failed"
   ./node_modules/.bin/jspm bundle app/main --minify --inject
   exitWithMessageOnError "jspm bundle-sfx failed"
+  $NPM_CMD prune --production
+  exitWithMessageOnError "Npm prune failed for production environment"
+  rm -rf ./jspm_packages
   cd - > /dev/null
 
 ##################################################################################################################################
