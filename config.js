@@ -16,12 +16,16 @@ System.config({
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.3.15",
+    "angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
     "babel": "npm:babel@4.7.16",
     "babel-runtime": "npm:babel-runtime@4.7.16",
     "css": "github:systemjs/plugin-css@0.1.9",
     "lodash": "npm:lodash@3.6.0",
     "restangular": "github:mgonto/restangular@1.5.1",
     "text": "github:systemjs/plugin-text@0.0.2",
+    "github:angular/bower-angular-mocks@1.3.15": {
+      "angular": "github:angular/bower-angular@1.3.15"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
