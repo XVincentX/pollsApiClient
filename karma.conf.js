@@ -23,7 +23,7 @@ module.exports = function (config) {
 
         jspm: {
             loadFiles: ['tests/unit/**/*.js'],
-            serveFiles: ['app/**/*.js']
+            serveFiles: ['app/**/*.js', 'app/**/*.html']
         },
 
         // preprocess matching files before serving them to the browser
