@@ -36,12 +36,12 @@ All the stuff gets transpiled using karma-jspm, no minification and bundling get
 
 Run front end tests: (karma)
 ```bash
-npm frontendtests
+npm run frontendtests
 ```
 
 Run e2e tests: (protractor)
 ```bash
-npm e2etests
+npm run e2etests
 ```
 
 Run all the tests: (karma + protractor)
