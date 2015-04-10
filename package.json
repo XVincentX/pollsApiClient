@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "babel": "^5.0.12",
-    "es6-module-loader": "^0.15.0",
+    "es6-module-loader": "^0.16.5",
     "karma": "^0.12.31",
     "karma-babel-preprocessor": "^5.0.1",
     "karma-chai": "^0.1.0",
@@ -52,7 +52,7 @@
     "mocha": "^2.2.1",
     "protractor": "^2.0.0",
     "requirejs": "^2.1.16",
-    "systemjs": "^0.15.0"
+    "systemjs": "^0.16.7"
   },
   "dependencies": {
     "cors": "^2.5.3",
