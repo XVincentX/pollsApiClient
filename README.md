@@ -34,6 +34,17 @@ NOTE: protractor is actually not working very well with **Mocha**, and we should
 
 All the stuff gets transpiled using karma-jspm, no minification and bundling gets executed.
 
+Run front end tests: (karma)
+```bash
+npm run frontendtests
+```
+
+Run e2e tests: (protractor)
+```bash
+npm run e2etests
+```
+
+Run all the tests: (karma + protractor)
 ```bash
 npm test
 ```
