@@ -1,17 +1,16 @@
 import 'angular-mocks'
 import '../../app/main'
 
-describe('PollsService unit tests', function () {
+describe('PollsService unit tests', () => {
   var Restangular = null
 
   beforeEach(angular.mock.module('pollsClient'));
 
-  beforeEach(angular.mock.inject(function (_Restangular_) {
+  beforeEach(angular.mock.inject((_Restangular_) => {
     Restangular = _Restangular_;
   }));
 
-  it('Should touch nasino', function () {
-    console.log(Restangular);
+  it('Should touch nasino', () => {
     assert.isTrue(true);
   });
 });
