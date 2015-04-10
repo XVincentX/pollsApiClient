@@ -17,8 +17,9 @@ System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.3.15",
     "angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
-    "babel": "npm:babel@4.7.16",
-    "babel-runtime": "npm:babel-runtime@4.7.16",
+    "babel": "npm:babel-core@5.0.12",
+    "babel-runtime": "npm:babel-runtime@5.0.12",
+    "core-js": "npm:core-js@0.8.1",
     "css": "github:systemjs/plugin-css@0.1.9",
     "lodash": "npm:lodash@3.6.0",
     "restangular": "github:mgonto/restangular@1.5.1",
@@ -111,6 +112,9 @@ System.config({
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "events": "github:jspm/nodelibs-events@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:core-js@0.8.1": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:core-util-is@1.0.1": {
