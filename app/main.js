@@ -5,7 +5,7 @@ import 'angular-hy-res'
 
 import applicationDirective from './directives/application/application'
 import pollsList from './directives/pollsList/pollsList'
-import pollsService from './services/polls'
+import pollsService from './services/pollsService'
 
 angular.module('pollsClient', [
     'angular-hy-res',
@@ -15,6 +15,6 @@ angular.module('pollsClient', [
 ])
 
 register('pollsClient')
-    .directive('application', applicationDirective)
-    .directive('pollslist', pollsList)
-    .service('pollsservice', pollsService)
+  .directive('application', applicationDirective)
+  .directive('pollsList', pollsList)
+  .service('pollsService', pollsService)
