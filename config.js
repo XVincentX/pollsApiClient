@@ -19,9 +19,9 @@ System.config({
     "angular": "github:angular/bower-angular@1.3.15",
     "angular-hy-res": "bower:angular-hy-res@0.0.12",
     "angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
-    "babel": "npm:babel-core@5.0.12",
-    "babel-runtime": "npm:babel-runtime@5.0.12",
-    "core-js": "npm:core-js@0.8.1",
+    "babel": "npm:babel-core@5.1.0",
+    "babel-runtime": "npm:babel-runtime@5.1.0",
+    "core-js": "npm:core-js@0.8.2",
     "css": "github:systemjs/plugin-css@0.1.9",
     "text": "github:systemjs/plugin-text@0.0.2",
     "bower:angular-hy-res@0.0.12": {
@@ -111,6 +111,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:core-js@0.8.1": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:core-js@0.8.2": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:core-util-is@1.0.1": {
