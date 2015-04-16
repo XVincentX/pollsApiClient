@@ -37,12 +37,12 @@
     }
   },
   "devDependencies": {
-    "babel": "^5.1.8",
+    "babel": "^5.1.10",
     "es6-module-loader": "^0.16.5",
     "karma": "^0.12.31",
     "karma-babel-preprocessor": "^5.0.1",
     "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^0.1.7",
+    "karma-chrome-launcher": "^0.1.8",
     "karma-jspm": "^1.1.4",
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^1.0.2",
