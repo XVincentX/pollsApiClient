@@ -1,5 +1,6 @@
 export default class pollsListController {
-    constructor() {
-
-    }
+  constructor(pollsService) {
+    this.pollsService = pollsService
+    this.message = "Hello"
+  }
 }

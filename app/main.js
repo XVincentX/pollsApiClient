@@ -1,20 +1,23 @@
 import angular from 'angular'
-import _ from 'lodash'
 import register from './utils/register'
 
-import 'restangular'
-
-
-
-window._ = _; //Pollute global namespace to make it avaiable to restangular
+import 'angular-hy-res'
 
 import applicationDirective from './directives/application/application'
 import pollsList from './directives/pollsList/pollsList'
-import pollsService from './services/polls'
+import pollsService from './services/pollsService'
 
-angular.module('pollsClient', ['restangular'])
+import button from './directives/ui/button/button'
+    
+angular.module('pollsClient', [
+    'angular-hy-res',
+    'angular-hy-res-hal',
+    'angular-hy-res-siren',
+    'angular-hy-res-link-header'
+])
 
 register('pollsClient')
-    .directive('application', applicationDirective)
-    .directive('pollslist', pollsList)
-    .service('pollsservice', pollsService)
+  .directive('application', applicationDirective)
+  .directive('pollsList', pollsList)
+  .service('pollsService', pollsService)
+  .directive('button', button)
