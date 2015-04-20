@@ -17,18 +17,14 @@ System.config({
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.3.15",
-    "angular-hy-res": "bower:angular-hy-res@0.0.13",
+    "angular-hy-res": "bower:angular-hy-res@0.0.14",
     "angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
     "babel": "npm:babel-core@5.1.0",
     "babel-runtime": "npm:babel-runtime@5.1.0",
     "core-js": "npm:core-js@0.8.2",
     "css": "github:systemjs/plugin-css@0.1.9",
     "text": "github:systemjs/plugin-text@0.0.2",
-    "bower:angular-hy-res@0.0.12": {
-      "angular": "bower:angular@1.3.15",
-      "uri.js": "bower:uri.js@1.13.2"
-    },
-    "bower:angular-hy-res@0.0.13": {
+    "bower:angular-hy-res@0.0.14": {
       "angular": "bower:angular@1.3.15",
       "uri.js": "bower:uri.js@1.13.2"
     },
