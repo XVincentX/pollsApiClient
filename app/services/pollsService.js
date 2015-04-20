@@ -1,6 +1,6 @@
 export default class pollsService {
   constructor(hrRoot) {
-    this.mainLink = hrRoot('http://polls.apiblueprint.org/').follow({ headers: { Accept: 'application/hal+json' } })
+    this.mainLink = hrRoot('http://polls.apiblueprint.org/').follow()
 
     this.mainLink.$promise.then((hrRootLink)=> {
         console.info("Fetched hypermedia api from polls")
