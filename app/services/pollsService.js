@@ -2,6 +2,11 @@ import _ from "lodash"
 
 export default class pollsService {
   constructor(hrRoot) {
+    this.hrRoot = hrRoot
+  }
+
+  getPolls()
+  {
     let loadEndpoint = () =>
     {
       this.hrRoot = hrRoot('http://polls.apiblueprint.org/').follow()
@@ -18,8 +23,9 @@ export default class pollsService {
     let mapPolls = (hyResLinks) =>
     {
       console.info("Received polls informations")
-      this.polls = _(hyResLinks).map((element) =>
+      return _(hyResLinks).map((element) =>
       {
+        console.log(element)
         return {
           question: element.question,
           published_at: element.published_at,
@@ -29,10 +35,11 @@ export default class pollsService {
       }).value()
     }
 
-    loadEndpoint()
+    return loadEndpoint()
       .then(loadPolls)
       .then(mapPolls)
       .catch((error) => {console.error(`Error during hypermedia fetching: ${error}`)})
+
 
   }
 }
