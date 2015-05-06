@@ -10,7 +10,7 @@ module.exports = function (config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jspm', 'mocha', 'chai'],
+    frameworks: ['jspm', 'mocha', 'chai-as-promised', 'chai'],
 
 
     // list of files / patterns to load in the browser
@@ -22,8 +22,8 @@ module.exports = function (config) {
     ],
 
     jspm: {
-      loadFiles: ['tests/unit/**/*.js'],
-      serveFiles: ['app/**/*.{js,html}']
+      loadFiles: ['app/**/*.{js}','tests/unit/**/*.js'],
+      serveFiles: ['app/**/*.{html}']
     },
 
     // preprocess matching files before serving them to the browser
