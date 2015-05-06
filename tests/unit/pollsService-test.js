@@ -2,15 +2,21 @@ import 'angular-mocks'
 import '../../app/main'
 
 describe('PollsService unit tests', () => {
-  var Restangular = null
+  var pollsService = null
 
-  beforeEach(angular.mock.module('pollsClient'));
+  beforeEach(() => {angular.mock.module('pollsClient')});
+  beforeEach(() => {angular.mock.inject((_pollsService_) => {
+    pollsService = _pollsService_
+  })})
 
-  beforeEach(angular.mock.inject((_Restangular_) => {
-    Restangular = _Restangular_;
-  }));
+  describe('If I try to get current polls', () => {
+    before(() => {
+      pollsService.getPolls()
+    })
 
-  it('Should touch nasino', () => {
-    assert.isTrue(true);
-  });
+    it('should return true', () => {
+      assert.isTrue(true)
+    })
+  })
+
 });

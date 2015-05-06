@@ -1,15 +1,16 @@
 import _ from "lodash"
 
 export default class pollsService {
-  constructor(hrRoot) {
+  constructor(hrRoot, apiLocation) {
     this.hrRoot = hrRoot
+    this.apiLocation = apiLocation
   }
 
   getPolls()
   {
     let loadEndpoint = () =>
     {
-      this.hrRoot = hrRoot('http://polls.apiblueprint.org/').follow()
+      this.hrRoot = hrRoot(this.apiLocation).follow()
       return this.hrRoot.$promise.then((hrRootLink) => { return hrRootLink })
     }
 

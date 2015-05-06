@@ -12,6 +12,7 @@ angular.module('pollsClient', [
     'angular-hy-res-siren',
     'angular-hy-res-link-header'
 ])
+  .constant('apiLocation', 'https://polls.apiblueprint.org/')
 
 register('pollsClient')
   .directive('application', applicationDirective)
