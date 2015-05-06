@@ -19,11 +19,11 @@ System.config({
     "angular": "github:angular/bower-angular@1.3.15",
     "angular-hy-res": "bower:angular-hy-res@0.0.16",
     "angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
-    "async": "npm:async@0.9.0",
     "babel": "npm:babel-core@5.2.9",
     "babel-runtime": "npm:babel-runtime@5.2.9",
     "core-js": "npm:core-js@0.9.6",
     "css": "github:systemjs/plugin-css@0.1.10",
+    "lodash": "npm:lodash@3.8.0",
     "text": "github:systemjs/plugin-text@0.0.2",
     "bower:angular-hy-res@0.0.16": {
       "angular": "bower:angular@1.3.15",
@@ -87,9 +87,6 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:async@0.9.0": {
-      "process": "github:jspm/nodelibs-process@0.1.1"
-    },
     "npm:buffer@3.2.1": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.4",
@@ -128,6 +125,9 @@ System.config({
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:lodash@3.8.0": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
