@@ -38,12 +38,10 @@
     }
   },
   "devDependencies": {
-    "babel": "^5.2.16",
     "chai": "^2.3.0",
     "chai-as-promised": "^5.0.0",
     "es6-module-loader": "^0.16.6",
     "karma": "^0.12.31",
-    "karma-babel-preprocessor": "^5.1.0",
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
     "karma-chrome-launcher": "^0.1.7",
