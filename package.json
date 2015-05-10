@@ -40,7 +40,6 @@
   "devDependencies": {
     "chai": "^2.3.0",
     "chai-as-promised": "^5.0.0",
-    "es6-module-loader": "^0.16.6",
     "karma": "^0.12.31",
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
@@ -48,12 +47,8 @@
     "karma-jspm": "^1.1.4",
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^1.0.2",
-    "karma-requirejs": "^0.2.2",
-    "karma-systemjs": "^0.3.0",
     "mocha": "^2.2.1",
-    "protractor": "^2.0.0",
-    "requirejs": "^2.1.16",
-    "systemjs": "^0.16.11"
+    "protractor": "^2.0.0"
   },
   "dependencies": {
     "cors": "^2.6.0",
