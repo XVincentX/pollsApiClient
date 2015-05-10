@@ -1,5 +1,5 @@
 <div class="poll">
-  <h3>{{::ctrl.poll.question}}</h3>
+  <h4>{{::ctrl.poll.question}}</h4>
   <ul>
     <li ng-repeat="choice in ctrl.poll.choices" ng-click="ctrl.vote(choice)">{{::choice}}</li>
   </ul>

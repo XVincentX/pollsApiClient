@@ -4,3 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.pollsList > .pollsListHeader
+{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
