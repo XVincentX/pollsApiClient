@@ -22,7 +22,7 @@ export default class pollsService {
       this.questionsLink = hrRootLink.$followOne("questions")
       return this.questionsLink
         .$promise
-        .then((qLink) => { return qLink.$$embedded.questions })
+        .then((qLink) => { return qLink.$embeddeds('questions') })
     }
 
     let mapPolls = (hyResLinks) =>
@@ -33,7 +33,7 @@ export default class pollsService {
         return {
           question: element.question,
           published_at: element.published_at,
-          choices: _(element.$$embedded.choices).map((choice) => {return choice.choice}).value()
+          choices: _(element.$embeddeds('choices')).map((choice) => {return choice.choice}).value()
 
         }
       }).value()
