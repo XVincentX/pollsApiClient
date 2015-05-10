@@ -1,0 +1,6 @@
+<div class="poll">
+  <h3>{{::ctrl.poll.question}}</h3>
+  <ul>
+    <li ng-repeat="choice in ctrl.poll.choices" ng-click="ctrl.vote(choice)">{{::choice}}</li>
+  </ul>
+</div>

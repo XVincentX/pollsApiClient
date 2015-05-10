@@ -7,6 +7,7 @@ import applicationDirective from './directives/application/application'
 import applicationHeaderDirective from './directives/applicationHeader/applicationHeader'
 import pollsList from './directives/pollsList/pollsList'
 import pollsService from './services/pollsService'
+import pollDirective from './directives/poll/poll'
 
 angular.module('pollsClient', [
     'angular-hy-res',
@@ -19,4 +20,5 @@ register('pollsClient')
   .directive('application', applicationDirective)
   .directive('pollsList', pollsList)
   .directive('applicationHeader', applicationHeaderDirective)
+  .directive('poll', pollDirective)
   .service('pollsService', pollsService)
