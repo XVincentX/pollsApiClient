@@ -6,7 +6,6 @@ import './pollsList.css!'
 export default class pollsListDirective {
   constructor() {
     this.restrict = 'E'
-    this.scope = {}
     this.template = template
     this.bindToController = true
     this.controllerAs = 'ctrl'
