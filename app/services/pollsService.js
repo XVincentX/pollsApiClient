@@ -28,12 +28,19 @@ export default class pollsService {
     let mapPolls = (hyResLinks) =>
     {
       console.info("Received polls informations")
-      return _(hyResLinks).map((element) =>
-      {
+      return _(hyResLinks).map((element) => {
         return {
           question: element.question,
           published_at: element.published_at,
-          choices: _(element.$embeddeds('choices')).map((choice) => {return choice.choice}).value()
+          choices: _(element.$embeddeds('choices')).map((choice) => {
+            return {
+              text: choice.choice,
+              votes: choice.votes
+            }
+          }).value(),
+          total: _(element.$embeddeds('choices')).reduce((innerTot, choice) => {
+              return innerTot + choice.votes
+          }, 0)
 
         }
       }).value()
