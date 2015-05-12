@@ -20,7 +20,16 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
 
   ```jspm install```
 
-4. Run the fake server with npm start
+4. We do grab some packages from bower as well, so we will need its adapter for _jspm_
+
+  ```
+    npm install -g jspm-bower-endpoint
+
+    # add registry endpoint
+    jspm registry create bower jspm-bower-endpoint
+  ```
+
+5. Run the fake server with npm start
 
   ```npm start```
 
