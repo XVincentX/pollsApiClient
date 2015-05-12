@@ -1,5 +1,4 @@
 System.config({
-  "baseURL": "/",
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
@@ -19,9 +18,9 @@ System.config({
     "angular": "github:angular/bower-angular@1.3.15",
     "angular-hy-res": "bower:angular-hy-res@0.0.16",
     "angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
-    "babel": "npm:babel-core@5.2.16",
-    "babel-runtime": "npm:babel-runtime@5.2.16",
-    "core-js": "npm:core-js@0.9.6",
+    "babel": "npm:babel-core@5.2.17",
+    "babel-runtime": "npm:babel-runtime@5.2.17",
+    "core-js": "npm:core-js@0.9.8",
     "css": "github:systemjs/plugin-css@0.1.10",
     "lodash": "npm:lodash@3.8.0",
     "text": "github:systemjs/plugin-text@0.0.2",
@@ -111,7 +110,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:core-js@0.9.6": {
+    "npm:core-js@0.9.8": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:core-util-is@1.0.1": {
