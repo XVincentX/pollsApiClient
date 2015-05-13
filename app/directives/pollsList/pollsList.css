@@ -2,7 +2,7 @@
 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .pollsList > .pollsListHeader
@@ -12,7 +12,7 @@
   margin: 5px;
 }
 
-.pollsList .poll
+.pollsList > poll
 {
   width: 300px;
   margin-bottom: 5%;
