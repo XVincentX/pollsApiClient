@@ -12,5 +12,6 @@ export default class pollsListDirective {
     this.bindToController = true
     this.controllerAs = 'ctrl'
     this.controller = controller
+    this.replace = true
   }
 }
