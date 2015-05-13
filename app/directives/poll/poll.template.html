@@ -1,7 +1,9 @@
 <div class="poll">
   <h4>{{::ctrl.poll.question}}</h4>
   <ul>
-    <li ng-repeat="choice in ctrl.poll.choices" ng-click="ctrl.vote(choice)">{{::choice.text}} {{choice.votes}}/{{ctrl.poll.total}}
+    <li ng-repeat="choice in ctrl.poll.choices" ng-click="ctrl.vote(choice)">
+      {{::choice.text}} {{choice.votes}}/{{ctrl.poll.total}}
+      <br>
       <progress max="{{ctrl.poll.total}}" value="{{choice.votes}}"></progress>
     </li>
   </ul>
