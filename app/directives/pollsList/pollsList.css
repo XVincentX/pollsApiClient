@@ -12,7 +12,7 @@
   margin: 5px;
 }
 
-.pollsList > poll
+.pollsList .poll
 {
   width: 300px;
   margin-bottom: 5%;
