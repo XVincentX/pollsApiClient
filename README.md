@@ -16,11 +16,7 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
 
   ```npm install```
 
-3. Restore jspm packages
-
-  ```jspm install```
-
-4. We do grab some packages from bower as well, so we will need its adapter for _jspm_
+3. We do grab some packages from bower as well, so we will need its adapter for _jspm_
 
   ```
     npm install -g jspm-bower-endpoint
@@ -28,6 +24,10 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
     # add registry endpoint
     jspm registry create bower jspm-bower-endpoint
   ```
+
+4. Restore jspm packages
+
+  ```jspm install```
 
 5. Run the fake server with npm start
 
