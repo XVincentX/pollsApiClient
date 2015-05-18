@@ -35,7 +35,10 @@ export default class pollsService {
           choices: _(element.$embeddeds('choices')).map((choice) => {
             return {
               text: choice.choice,
-              votes: choice.votes
+              votes: choice.votes,
+              actions: {
+                vote: choice.$form('vote')
+              }
             }
           }).value(),
           total: _(element.$embeddeds('choices')).reduce((innerTot, choice) => {

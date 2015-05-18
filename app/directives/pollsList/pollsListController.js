@@ -6,5 +6,6 @@ export default class pollsListController {
       .then((polls) => {
       this.polls = polls
     })
+    .catch(() => { alert("Fanculo amico"); })
   }
 }
