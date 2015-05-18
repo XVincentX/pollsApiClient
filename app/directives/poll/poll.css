@@ -25,6 +25,11 @@
   margin-top: 5px;
 }
 
+.poll h4, .poll h5
+{
+  text-align: center;
+}
+
 .poll h4
 {
   margin: 10px;
