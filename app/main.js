@@ -2,6 +2,7 @@ import angular from 'angular'
 import register from './utils/register'
 
 import 'angular-hy-res'
+import './directives/progressBar/progressBar'
 
 import applicationDirective from './directives/application/application'
 import applicationHeaderDirective from './directives/applicationHeader/applicationHeader'
@@ -12,7 +13,8 @@ import pollDirective from './directives/poll/poll'
 angular.module('pollsClient', [
     'angular-hy-res',
     'angular-hy-res-siren',
-    'angular-hy-res-link-header'
+    'angular-hy-res-link-header',
+    'isteven-omni-bar'
 ])
   .constant('apiLocation', 'https://polls.apiblueprint.org/')
 
