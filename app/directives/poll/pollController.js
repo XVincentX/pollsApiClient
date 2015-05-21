@@ -5,7 +5,8 @@ export default class pollController {
   vote(choice) {
     if (choice.actions.vote != null)
     {
-      alert('vote noted')
+      choice.votes++;
+      this.poll.total++;
     }
   }
 }

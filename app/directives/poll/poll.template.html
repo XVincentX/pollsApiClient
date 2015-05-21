@@ -4,7 +4,7 @@
   <ul>
     <li ng-repeat="choice in ::ctrl.poll.choices" ng-click="ctrl.vote(choice)">
       <isteven-omni-bar current-value="choice.votes" max-value="ctrl.poll.total">
-        {{::choice.text}} {{choice.votes}}
+        {{::choice.text}}: {{choice.votes}}
       </isteven-omni-bar>
     </li>
   </ul>
