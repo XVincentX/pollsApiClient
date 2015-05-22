@@ -5,8 +5,16 @@ export default class pollController {
   vote(choice) {
     if (choice.actions.vote != null)
     {
-      choice.votes++;
-      this.poll.total++;
+      choice.actions.vote.submit().$promise
+        .then(() => {
+          console.info(`Voted ${choice.text}`)
+          choice.votes++;
+          this.poll.total++;
+      })
+        .catch(error => {
+        alert(error)
+      })
+
     }
   }
 }

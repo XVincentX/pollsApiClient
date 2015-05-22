@@ -32,6 +32,7 @@ export default class pollsService {
         return {
           question: element.question,
           published_at: element.published_at,
+          actions: element.$forms(),
           choices: _(element.$embeddeds('choices')).map((choice) => {
             return {
               text: choice.choice,
