@@ -40,3 +40,8 @@
 {
   margin: 10px;
 }
+
+.poll button
+{
+  text-transform: capitalize;
+}
