@@ -55,4 +55,9 @@ export default class pollsService {
       .then(mapPolls)
       .catch((error) => {console.error(`Error during hypermedia fetching: ${error}`)})
   }
+
+  voteChoice(choice)
+  {
+    return choice.actions.vote.submit().$promise
+  }
 }

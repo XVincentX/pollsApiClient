@@ -1,11 +1,12 @@
 export default class pollController {
-  constructor() {
+  constructor(pollsService) {
+    this.pollsService = pollsService
   }
 
   vote(choice) {
     if (choice.actions.vote != null)
     {
-      choice.actions.vote.submit().$promise
+      this.pollsService.voteChoice(choice)
         .then(() => {
           console.info(`Voted ${choice.text}`)
           choice.votes++;
