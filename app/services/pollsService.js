@@ -22,18 +22,27 @@ export default class pollsService {
       this.questionsLink = hrRootLink.$followOne("questions")
       return this.questionsLink
         .$promise
-        .then((qLink) => { return qLink.$embeddeds('questions') })
+        .then((qLink) => {
+        let questions = qLink.$embeddeds('questions')
+        if (questions.length == 0)
+          return qLink.$embeddeds('question')
+        return questions
+      })
     }
 
     let mapPolls = (hyResLinks) =>
     {
       console.info("Received polls informations")
       return _(hyResLinks).map((element) => {
+        let _choices = _(element.$embeddeds('choices'))
+        if (element.$embeddeds('choices').length == 0)
+          _choices = _(element.$embeddeds('choice'))
+
         return {
           question: element.question,
           published_at: element.published_at,
           actions: element.$forms(),
-          choices: _(element.$embeddeds('choices')).map((choice) => {
+          choices: _choices.map((choice) => {
             return {
               text: choice.choice,
               votes: choice.votes,
