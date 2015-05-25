@@ -23,7 +23,6 @@ describe('PollsService unit tests', () => {
     })
 
     it('should return 1 question', () => {
-      debugger
       assert.eventually.lengthOf(pollsData, 1)
     })
 
