@@ -48,7 +48,7 @@
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^1.0.2",
     "mocha": "^2.2.1",
-    "protractor": "^2.0.0"
+    "protractor": "^2.1.0"
   },
   "dependencies": {
     "cors": "^2.6.0",
