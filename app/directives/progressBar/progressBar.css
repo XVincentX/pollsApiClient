@@ -1,8 +1,8 @@
 .containerBar {
-    width: 75%;
+    display: inline-block;
+    width: 100%;
     border-radius: 5px;
     height: 30px;
-    float: left;
 }
 
 .maxValue {
@@ -20,12 +20,7 @@
     z-index: 1;
     height: 100%;
     border-radius: 5px;
-    background: #5AAD5A;
-    background-image: -webkit-linear-gradient(top, #5CCB5C, #39B239);
-    background-image: -moz-linear-gradient(top, #5CCB5C, #39B239);
-    background-image: -ms-linear-gradient(top, #5CCB5C, #39B239);
-    background-image: -o-linear-gradient(top, #5CCB5C, #39B239);
-    background-image: linear-gradient(to bottom, #5CCB5C, #39B239);
+    background-color: #99cc00;
 }
 
 /* Sub value bar animation on change. You need to include ngAnimate module for this */
