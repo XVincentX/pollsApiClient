@@ -15,7 +15,11 @@ export default class pollController {
         .catch(error => {
         alert(error)
       })
-
     }
+
+  executeAction(action)
+  {
+
+  }
   }
 }

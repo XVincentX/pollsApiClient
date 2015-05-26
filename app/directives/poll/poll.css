@@ -45,7 +45,22 @@
   padding-right: .5em;
 }
 
+.poll button
+{
+  color: #ffffff;
+  background: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.poll button:hover
+{
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
 .poll .choiceButton
 {
   float: right;
+  height: 30px;
 }
