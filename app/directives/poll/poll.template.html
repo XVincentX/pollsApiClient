@@ -6,6 +6,8 @@
       <isteven-omni-bar current-value="choice.votes" max-value="ctrl.poll.total">
         {{::choice.text}}: {{choice.votes}}
       </isteven-omni-bar>
+      <button class="pollVote idle">VOTE!</button>
+      <div class="clearfix"></div>
     </li>
     <button ng-repeat="action in ::ctrl.poll.actions" ng-click="ctrl.executeAction(action)">
       {{::action.name}}
