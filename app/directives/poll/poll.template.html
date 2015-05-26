@@ -2,10 +2,13 @@
   <h4>{{::ctrl.poll.question}}</h4>
   <h5>Published at {{::ctrl.poll.published_at | date: short}}</h5>
   <ul>
-    <li ng-repeat="choice in ::ctrl.poll.choices" ng-click="ctrl.vote(choice)">
-      <isteven-omni-bar current-value="choice.votes" max-value="ctrl.poll.total">
-        {{::choice.text}}: {{choice.votes}}
-      </isteven-omni-bar>
+    <li ng-repeat="choice in ::ctrl.poll.choices">
+      <div>
+        <isteven-omni-bar current-value="choice.votes" max-value="ctrl.poll.total">
+          {{::choice.text}}: {{choice.votes}}
+        </isteven-omni-bar>
+        <button ng-click="ctrl.vote(choice)">Vote</button>
+      </div>
     </li>
     <button ng-repeat="action in ::ctrl.poll.actions" ng-click="ctrl.executeAction(action)">
       {{::action.name}}

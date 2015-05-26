@@ -11,3 +11,13 @@ body
   max-width: 960px;
   margin: 0 auto;
 }
+
+button
+{
+  border-radius: 5px;
+  text-shadow: 2px 2px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
