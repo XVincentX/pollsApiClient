@@ -38,3 +38,15 @@
 {
   text-transform: capitalize;
 }
+
+.poll .pollChoiceContainer
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.poll .choiceButton
+{
+  margin-left: 5%;
+  margin-right: 5%;
+}
