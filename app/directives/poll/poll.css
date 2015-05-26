@@ -39,14 +39,13 @@
   text-transform: capitalize;
 }
 
-.poll .pollChoiceContainer
+.poll .omnibarContainer
 {
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  padding-right: .5em;
 }
 
 .poll .choiceButton
 {
-  margin-left: 5%;
-  margin-right: 5%;
+  float: right;
 }
