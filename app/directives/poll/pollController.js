@@ -19,6 +19,14 @@ export default class pollController {
   }
 
   executeAction(action) {
-    return pollsService.executeAction(action)
+    return this.pollsService.executeAction(action)
+    .then(() => {
+      if (action.name == 'delete')
+        alert('deleted')
+    })
+    .catch(error => {
+        alert(error)
+      })
+
   }
 }
