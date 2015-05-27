@@ -16,10 +16,9 @@ export default class pollController {
         alert(error)
       })
     }
-
-  executeAction(action)
-  {
-
   }
+
+  executeAction(action) {
+    return pollsService.executeAction(action)
   }
 }

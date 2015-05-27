@@ -67,6 +67,11 @@ export default class pollsService {
 
   voteChoice(choice)
   {
-    return choice.actions.vote.submit().$promise
+    return this.executeAction(choice.actions.vote)
+  }
+
+  executeAction(action)
+  {
+    return action.submit().$promise
   }
 }
