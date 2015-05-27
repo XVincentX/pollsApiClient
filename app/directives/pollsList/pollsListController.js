@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 export default class pollsListController {
   constructor(pollsService) {
     this.pollsService = pollsService
@@ -7,5 +9,10 @@ export default class pollsListController {
       this.polls = polls
     })
     .catch(() => { alert("Fanculo amico"); })
+  }
+
+  deletePoll(poll)
+  {
+    _.remove(this.polls, {id: poll.id})
   }
 }

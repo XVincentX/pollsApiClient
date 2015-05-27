@@ -37,8 +37,8 @@ export default class pollsService {
         let _choices = _(element.$embeddeds('choices'))
         if (element.$embeddeds('choices').length == 0)
           _choices = _(element.$embeddeds('choice'))
-
         return {
+          id: element.$link('self').href,
           question: element.question,
           published_at: element.published_at,
           actions: element.$forms(),

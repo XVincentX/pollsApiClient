@@ -6,7 +6,8 @@ export default class pollsListDirective {
   constructor() {
     this.restrict = 'E'
     this.scope = {
-      poll: '='
+      poll: '=',
+      delete: '&'
     }
     this.template = template
     this.bindToController = true

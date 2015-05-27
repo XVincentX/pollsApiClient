@@ -22,11 +22,10 @@ export default class pollController {
     return this.pollsService.executeAction(action)
     .then(() => {
       if (action.name == 'delete')
-        alert('deleted')
+        this.delete(this.poll)
     })
     .catch(error => {
         alert(error)
       })
-
   }
 }
