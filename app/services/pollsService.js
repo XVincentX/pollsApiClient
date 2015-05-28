@@ -32,7 +32,6 @@ export default class pollsService {
 
     let mapPolls = (hyResLinks) =>
     {
-      debugger
       console.info("Received polls informations")
       return _(hyResLinks.questions).map((element) => {
         let _choices = _(element.$embeddeds('choices'))
