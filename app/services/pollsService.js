@@ -33,7 +33,7 @@ export default class pollsService {
     let mapPolls = (hyResLinks) =>
     {
       console.info("Received polls informations")
-      return _(hyResLinks.questions).map((element) => {
+      let questions = _(hyResLinks.questions).map((element) => {
         let _choices = _(element.$embeddeds('choices'))
         if (element.$embeddeds('choices').length == 0)
           _choices = _(element.$embeddeds('choice'))
@@ -51,14 +51,13 @@ export default class pollsService {
               }
             }
           }).value(),
-          actions: hyResLinks.actions,
-          links: hyResLinks.links,
           total: _(element.$embeddeds('choices')).reduce((innerTot, choice) => {
               return innerTot + choice.votes
           }, 0)
 
         }
       }).value()
+      return {actions: hyResLinks.actions, links: hyResLinks.links, questions: questions}
     }
 
     return loadEndpoint()

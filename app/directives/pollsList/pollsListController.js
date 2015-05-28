@@ -13,6 +13,6 @@ export default class pollsListController {
 
   deletePoll(poll)
   {
-    _.remove(this.polls, {id: poll.id})
+    _.remove(this.polls.questions, {id: poll.id})
   }
 }
