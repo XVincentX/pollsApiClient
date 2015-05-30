@@ -31,15 +31,23 @@
 
 .pollsList a:hover
 {
-   background-color: #f2f2f2;
+   border-color: #787878;
 }
+
+.pollsList a:active
+{
+  background: #eeeeee;
+  color: #262626;
+  box-shadow: none;
+}
+
 
 .pollsList a:last-of-type:after
 {
-   content: ' \00bb'
+   content: '  \00bb'
 }
 
 .pollsList a:first-of-type:before
 {
-   content: '\00ab '
+   content: '\00ab  '
 }
