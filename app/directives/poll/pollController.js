@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 export default class pollController {
   constructor(pollsService) {
     this.pollsService = pollsService
@@ -29,8 +31,9 @@ export default class pollController {
   executeAction(action) {
     return this.pollsService.executeAction(action)
     .then(() => {
-      if (action.name == 'delete')
-        this.delete(this.poll)
+      debugger
+      if (_.isFunction(this[action.name]))
+        this[action.name].apply(this.poll)
     })
     .catch(error => {
         alert(error)
