@@ -23,6 +23,7 @@ System.config({
     "core-js": "npm:core-js@0.9.13",
     "css": "github:systemjs/plugin-css@0.1.11",
     "lodash": "npm:lodash@3.9.3",
+    "ng-promise-status": "npm:ng-promise-status@0.1.2",
     "text": "github:systemjs/plugin-text@0.0.2",
     "github:angular/bower-angular-mocks@1.4.0": {
       "angular": "github:angular/bower-angular@1.4.0"
@@ -138,6 +139,10 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:lodash@3.9.3": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:ng-promise-status@0.1.2": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:os-browserify@0.1.2": {
