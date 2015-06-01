@@ -63,4 +63,21 @@
 {
   float: right;
   height: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.poll .choiceButton.success
+{
+  background-color: green;
+}
+
+.poll .choiceButton.danger
+{
+  background-color: red;
+}
+
+.poll .choiceButton.progress
+{
+  background-color: yellow;
+  color: black;
 }
