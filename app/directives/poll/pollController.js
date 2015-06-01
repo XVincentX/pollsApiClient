@@ -1,13 +1,23 @@
+import _ from 'lodash'
+
 export default class pollController {
   constructor(pollsService) {
     this.pollsService = pollsService
+    this.buttonOptions = {
+      success_class:  'success',
+      error_class:    'danger',
+      progress_class: 'progress',
+      idle_class:     'idle',
+      delay:          1500
+    };
   }
 
   vote(choice) {
     if (choice.actions.vote != null)
     {
-      this.pollsService.voteChoice(choice)
-        .then(() => {
+      choice.promise = this.pollsService.voteChoice(choice)
+
+      choice.promise.then(() => {
           console.info(`Voted ${choice.text}`)
           choice.votes++;
           this.poll.total++;
@@ -21,8 +31,9 @@ export default class pollController {
   executeAction(action) {
     return this.pollsService.executeAction(action)
     .then(() => {
-      if (action.name == 'delete')
-        this.delete(this.poll)
+      debugger
+      if (_.isFunction(this[action.name]))
+        this[action.name].apply(this.poll)
     })
     .catch(error => {
         alert(error)

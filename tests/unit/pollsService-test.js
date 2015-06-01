@@ -23,11 +23,11 @@ describe('PollsService unit tests', () => {
     })
 
     it('should return 1 question', () => {
-      assert.eventually.lengthOf(pollsData, 1)
+      assert.eventually.lengthOf(pollsData.questions, 1)
     })
 
     it('should return 4 choices', () => {
-      assert.eventually.lengthOf(pollsData, 'choices', 4)
+      assert.eventually.lengthOf(pollsData, 'questions[0].choices', 4)
     })
 
   })
