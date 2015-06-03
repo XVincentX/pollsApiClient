@@ -1,9 +1,10 @@
 import _ from "lodash"
 
 export default class pollsService {
-  constructor(hrRoot, apiLocation) {
+  constructor(hrRoot, apiLocation, $log) {
     this.hrRoot = hrRoot
     this.apiLocation = apiLocation
+    this.$log = $log
   }
 
   getPolls()
@@ -18,7 +19,7 @@ export default class pollsService {
 
     let loadPolls = (hrRootLink) =>
     {
-      console.info("Fetched hypermedia api endpoint from polls")
+      this.$log.info("Fetched hypermedia api endpoint from polls")
       this.questionsLink = hrRootLink.$followOne("questions")
       return this.questionsLink
         .$promise
@@ -32,7 +33,7 @@ export default class pollsService {
 
     let mapPolls = (hyResLinks) =>
     {
-      console.info("Received polls informations")
+      this.$log.info("Received polls informations")
       let questions = _(hyResLinks.questions).map((element) => {
         let _choices = _(element.$embeddeds('choices'))
         if (element.$embeddeds('choices').length == 0)
@@ -63,7 +64,7 @@ export default class pollsService {
     return loadEndpoint()
       .then(loadPolls)
       .then(mapPolls)
-      .catch((error) => {console.error(`Error during hypermedia fetching: ${error}`)})
+      .catch((error) => {this.$log.error(`Error during hypermedia fetching: ${error}`)})
   }
 
   voteChoice(choice)

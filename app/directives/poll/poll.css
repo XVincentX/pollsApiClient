@@ -59,28 +59,25 @@
   text-decoration: none;
 }
 
-.poll .choiceButton
+.poll .btn
 {
   float: right;
-  height: 30px;
   transition: all 0.2s ease-in-out;
-  border-radius: 1.5em;
-  border: 1x solid;
 }
 
-.poll .choiceButton.success
+.poll .btn.success
 {
   background-color: #8BC34A;
   border-color: #689F38;
 }
 
-.poll .choiceButton.danger
+.poll .btn.danger
 {
   background-color: #d9534f;
   border-color: #d43f3a;
 }
 
-.poll .choiceButton.progress
+.poll .btn.progress
 {
   background-color: #FFF9C4;
   border-color: #FFF59D ;

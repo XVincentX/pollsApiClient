@@ -15,3 +15,26 @@ body
     margin: 0 auto;
     max-width: 960px;
 }
+
+.btn
+{
+  border: 1px solid #e6e6e6;
+  border-radius: 0.25em;
+  text-decoration: none;
+  padding: .6em .8em;
+  font-size: 1.0rem;
+  color: #2E4057;
+}
+
+.btn:hover
+{
+   border-color: #787878;
+}
+
+.btn:active
+{
+  background: #eeeeee;
+  color: #262626;
+  box-shadow: none;
+}
+

@@ -1,8 +1,9 @@
 import _ from 'lodash'
 
 export default class pollController {
-  constructor(pollsService) {
+  constructor(pollsService, $log) {
     this.pollsService = pollsService
+    this.$log = $log
     this.buttonOptions = {
       success_class:  'success',
       error_class:    'danger',
@@ -18,7 +19,7 @@ export default class pollController {
       choice.promise = this.pollsService.voteChoice(choice)
 
       choice.promise.then(() => {
-          console.info(`Voted ${choice.text}`)
+          this.$log.info(`Voted ${choice.text}`)
           choice.votes++;
           this.poll.total++;
       })
