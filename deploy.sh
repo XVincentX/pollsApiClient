@@ -120,9 +120,6 @@ fi
 # 4. Install jspm packages and bundle to a single file
   cd "$DEPLOYMENT_TARGET"
   eval $NPM_CMD install jspm
-  eval $NPM_CMD install -g jspm-bower-endpoint
-  eval ./node_modules/.bin/jspm registry create bower jspm-bower-endpoint
-  exitWithMessageOnError "installing jspm failed"
   ./node_modules/.bin/jspm install
   exitWithMessageOnError "jspm failed"
   ./node_modules/.bin/jspm bundle app/main --minify --inject
