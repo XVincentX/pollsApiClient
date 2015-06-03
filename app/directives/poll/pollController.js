@@ -31,13 +31,12 @@ export default class pollController {
 
   executeAction(action) {
     return this.pollsService.executeAction(action)
-    .then(() => {
-      debugger
+      .then(() => {
       if (_.isFunction(this[action.name]))
         this[action.name].apply(this.poll)
     })
     .catch(error => {
-        alert(error)
+        $log.error(error)
       })
   }
 }

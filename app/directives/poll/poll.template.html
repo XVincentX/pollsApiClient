@@ -10,8 +10,10 @@
         </isteven-omni-bar>
       </div>
     </li>
-    <button class="btn" ng-repeat="action in ::ctrl.poll.actions" ng-click="ctrl.executeAction(action)">
-      {{::action.name}}
-    </button>
+    <div class="footer">
+      <button class="btn" ng-repeat="action in ::ctrl.poll.actions" ng-click="ctrl.executeAction(action)">
+        {{::action.name}}
+      </button>
+    </div>
   </ul>
 </div>
