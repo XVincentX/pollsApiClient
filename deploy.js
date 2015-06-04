@@ -4,7 +4,7 @@ if (process.env.NODE_ENV === 'production')
 {
   jspm.install(true, {})
     .then(function() {
-      jspm.bundleSFX('app/main', 'build.js', {sourceMaps: false, inject: true})
+      jspm.bundle('app/main', 'build.js', {sourceMaps: false, inject: true})
     })
     .then(function(){
       console.log('Deploy finished')
