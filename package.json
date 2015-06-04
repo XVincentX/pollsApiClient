@@ -9,6 +9,9 @@
     "e2etests": "./node_modules/.bin/protractor protractor.conf.js",
     "postinstall": "./node_modules/.bin/webdriver-manager update"
   },
+  "engines": {
+      "node": "0.10.38"
+    },
   "repository": {
     "type": "git",
     "url": "https://github.com/XVincentX/pollsApiClient"
