@@ -3,6 +3,8 @@
   "description": "AngularJS powered client for Apiary.io pollsApi",
   "website": "http://vncz.js.org",
   "addons": [],
-  "env": {},
+  "env": {
+    "NODE_ENV": "production"
+  },
   "scripts": {}
 }
