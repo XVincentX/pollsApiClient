@@ -10,7 +10,7 @@
     "postinstall": "node deploy.js"
   },
   "engines": {
-    "node": "0.10.38",
+    "node": "0.10.32",
     "npm": "2.10.1"
   },
   "repository": {
