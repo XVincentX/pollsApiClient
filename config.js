@@ -18,6 +18,7 @@ System.config({
     "angular-formly": "npm:angular-formly@6.12.0-beta.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.17",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
+    "api-check": "npm:api-check@7.2.4",
     "babel": "npm:babel-core@5.4.7",
     "babel-runtime": "npm:babel-runtime@5.4.7",
     "core-js": "npm:core-js@0.9.13",
