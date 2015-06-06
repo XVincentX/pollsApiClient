@@ -15,6 +15,7 @@ System.config({
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.0",
+    "angular-formly": "npm:angular-formly@6.12.0-beta.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.17",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
     "babel": "npm:babel-core@5.4.7",
@@ -83,6 +84,10 @@ System.config({
       "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:angular-formly@6.12.0-beta.1": {
+      "angular": "npm:angular@1.4.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
     "npm:angular-hy-res@0.0.17": {
       "angular": "npm:angular@1.4.0",
