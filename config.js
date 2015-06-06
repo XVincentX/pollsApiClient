@@ -16,7 +16,7 @@ System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.0",
     "angular-formly": "npm:angular-formly@6.12.0-beta.1",
-    "angular-hy-res": "npm:angular-hy-res@0.0.17",
+    "angular-hy-res": "npm:angular-hy-res@0.0.19",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
     "api-check": "npm:api-check@7.2.4",
     "babel": "npm:babel-core@5.4.7",
@@ -90,9 +90,9 @@ System.config({
       "angular": "npm:angular@1.4.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
-    "npm:angular-hy-res@0.0.17": {
+    "npm:angular-hy-res@0.0.19": {
       "angular": "npm:angular@1.4.0",
-      "hy-res": "npm:hy-res@0.0.11",
+      "hy-res": "npm:hy-res@0.0.12",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -137,7 +137,7 @@ System.config({
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
-    "npm:hy-res@0.0.11": {
+    "npm:hy-res@0.0.12": {
       "URIjs": "npm:URIjs@1.15.1",
       "form-urlencoded": "npm:form-urlencoded@0.0.7",
       "http-link": "npm:http-link@0.3.0",
