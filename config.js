@@ -15,6 +15,7 @@ System.config({
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.0",
+    "angular-animate": "npm:angular-animate@1.4.0",
     "angular-formly": "npm:angular-formly@6.12.0-beta.1",
     "angular-formly-templates-bootstrap": "npm:angular-formly-templates-bootstrap@4.3.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.19",
@@ -67,11 +68,6 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
-    },
-    "github:systemjs/plugin-css@0.1.11": {
-      "clean-css": "npm:clean-css@3.1.9",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "github:systemjs/plugin-css@0.1.12": {
       "clean-css": "npm:clean-css@3.1.9",
@@ -142,11 +138,6 @@ System.config({
       "events": "github:jspm/nodelibs-events@0.1.1",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
-    },
-    "npm:core-js@0.9.13": {
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "process": "github:jspm/nodelibs-process@0.1.1",
-      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:core-js@0.9.14": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
