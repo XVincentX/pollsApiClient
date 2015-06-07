@@ -16,20 +16,11 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
 
   ```npm install```
 
-3. We do grab some packages from bower as well, so we will need its adapter for _jspm_
-
-  ```
-    npm install -g jspm-bower-endpoint
-
-    # add registry endpoint
-    jspm registry create bower jspm-bower-endpoint
-  ```
-
-4. Restore jspm packages
+3. Restore jspm packages
 
   ```jspm install```
 
-5. Run the fake server with npm start
+4. Run the fake server with npm start
 
   ```npm start```
 
@@ -60,6 +51,6 @@ npm test
 
 # Deploy
 
-Each time a new commit is done in the **master** branch, a trigger will be launched. Then the application will be deployed to Azure at [http://pollsapiclient.azurewebsites.net](http://pollsapiclient.azurewebsites.net). The deployment script can be modified if needed: **deploy.sh**.
+Each time a new commit is done in the **master** branch, a trigger will be launched. Then the application will be deployed to Azure at [http://pollsapiclient.azurewebsites.net](http://pollsapiclient.azurewebsites.net) and on Heroku at [http://pollsapiclient.herokuapp.com](http://pollsapiclient.herokuapp.com) as well.
 
-There is no heroku deploy script yet.
+The deploy script is a `postinstall` npm script that will run only if `NODE_ENV` is set to production. For this reason, **jspm** is required as a production dependency.
