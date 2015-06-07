@@ -58,7 +58,7 @@ export default class pollsService {
 
         }
       }).value()
-      return {actions: hyResLinks.actions, links: hyResLinks.links, questions: questions}
+      return {actions: hyResLinks.actions, links: _.filter(hyResLinks.links, (link) => {return link.rel[0] != 'self'}), questions: questions}
     }
 
     return loadEndpoint()

@@ -24,6 +24,11 @@
   padding: .6em .8em;
 }
 
+.pollsList a
+{
+  text-transform: capitalize;
+}
+
 .pollsList a:last-of-type:after
 {
    content: '  \00bb'

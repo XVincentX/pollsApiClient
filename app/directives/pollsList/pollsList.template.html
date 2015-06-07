@@ -4,8 +4,6 @@
     <poll ng-repeat="p in ctrl.polls.questions track by p.id" poll="p" delete="ctrl.deletePoll(p)"></poll>
   </div>
   <div class="flexBox">
-    <!-- <a class="btn" href="#" ng-repeat="a in ::ctrl.polls.actions">{{::a.name}}</a> -->
-    <a class="btn" href="#">Prev</a>
-    <a class="btn" href="#">Next</a>
+    <a class="btn" href="#" ng-repeat="a in ::ctrl.polls.links">{{::a.rel[0]}}</a>
   </div>
 </div>
