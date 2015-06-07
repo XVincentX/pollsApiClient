@@ -4,7 +4,11 @@ export default class pollController {
     this.model = {}
     this.fields = [
       {
-        type:'input'
+        type:'input',
+        templateOptions: {
+          label: 'Nasino',
+          defaultValue: 'fetaciato'
+        }
       }
     ]
   }

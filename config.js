@@ -16,6 +16,7 @@ System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.0",
     "angular-formly": "npm:angular-formly@6.12.0-beta.1",
+    "angular-formly-templates-bootstrap": "npm:angular-formly-templates-bootstrap@4.3.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.19",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
     "api-check": "npm:api-check@7.2.4",
@@ -86,6 +87,14 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
+    "npm:angular-formly-templates-bootstrap@4.3.1": {
+      "angular": "npm:angular@1.4.0",
+      "angular-formly": "npm:angular-formly@6.12.0-beta.1",
+      "api-check": "npm:api-check@7.2.4",
+      "bootstrap": "npm:bootstrap@3.3.4",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0"
+    },
     "npm:angular-formly@6.12.0-beta.1": {
       "angular": "npm:angular@1.4.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2"
@@ -103,6 +112,11 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:babel-runtime@5.5.4": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:bootstrap@3.3.4": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:buffer@3.2.2": {
