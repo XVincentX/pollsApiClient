@@ -7,7 +7,11 @@
     "test": "./node_modules/karma/bin/karma start && ./node_modules/.bin/protractor protractor.conf.js",
     "frontendtests": "./node_modules/karma/bin/karma start",
     "e2etests": "./node_modules/.bin/protractor protractor.conf.js",
-    "postinstall": "./node_modules/.bin/webdriver-manager update"
+    "postinstall": "node deploy.js"
+  },
+  "engines": {
+    "node": "0.10.32",
+    "npm": "2.9.1"
   },
   "repository": {
     "type": "git",
@@ -39,8 +43,8 @@
     }
   },
   "devDependencies": {
-    "chai": "^2.3.0",
-    "chai-as-promised": "^5.0.0",
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
     "karma": "^0.12.33",
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
@@ -52,7 +56,10 @@
     "protractor": "^2.1.0"
   },
   "dependencies": {
+    "consolidate": "^0.13.1",
     "cors": "^2.6.1",
-    "express": "^4.12.1"
+    "ejs": "^2.3.1",
+    "express": "^4.12.1",
+    "jspm": "^0.15.7"
   }
 }
