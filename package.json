@@ -56,7 +56,9 @@
     "protractor": "^2.1.0"
   },
   "dependencies": {
+    "consolidate": "^0.13.1",
     "cors": "^2.6.1",
+    "ejs": "^2.3.1",
     "express": "^4.12.1",
     "jspm": "^0.15.6"
   }
