@@ -22,8 +22,8 @@ angular.module('pollsClient', [
     'ngPromiseStatus',
     'isteven-omni-bar'
 ])
-  //.constant('apiLocation', 'https://polls.apiblueprint.org/')
-  .constant('apiLocation', 'http://private-851d-pollshypermedia.apiary-mock.com/')
+  .constant('apiLocation', 'https://polls.apiblueprint.org/')
+  //.constant('apiLocation', 'http://private-851d-pollshypermedia.apiary-mock.com/')
 
 register('pollsClient')
   .directive('application', applicationDirective)
