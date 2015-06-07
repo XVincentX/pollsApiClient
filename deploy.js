@@ -2,6 +2,7 @@ var jspm = require('jspm')
 
 if (process.env.NODE_ENV === 'production')
 {
+  console.log('Executing deploy script')
   jspm.install(true, {})
     .then(function(){
       return jspm.dlLoader()
