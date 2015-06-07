@@ -8,5 +8,6 @@ if (process.env.NODE_ENV === 'production')
     })
     .then(function(){
       console.log('Deploy finished')
+      process.exit(0)
   })
 }
