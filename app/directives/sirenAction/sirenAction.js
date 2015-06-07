@@ -9,7 +9,7 @@ export default class sirenActionDirective
         this.restrict = 'E'
         this.template = template
         this.scope = {
-
+          action: '='
         }
         this.bindToController = true
         this.controllerAs = 'ctrl'

@@ -1,8 +1,10 @@
 import _ from 'lodash'
+import executeAction from '../../utils/executeAction'
 
-export default class pollController {
+
+export default class pollController extends executeAction {
   constructor(pollsService, $log) {
-    this.pollsService = pollsService
+    super(pollsService)
     this.$log = $log
     this.buttonOptions = {
       success_class:  'success',
@@ -29,14 +31,4 @@ export default class pollController {
     }
   }
 
-  executeAction(action) {
-    return this.pollsService.executeAction(action)
-      .then(() => {
-      if (_.isFunction(this[action.name]))
-        this[action.name].apply(this.poll)
-    })
-    .catch(error => {
-        $log.error(error)
-      })
-  }
 }
