@@ -16,11 +16,11 @@ System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.0",
     "angular-animate": "npm:angular-animate@1.4.0",
-    "angular-formly": "npm:angular-formly@6.12.0-beta.1",
+    "angular-formly": "npm:angular-formly@6.12.0",
     "angular-formly-templates-bootstrap": "npm:angular-formly-templates-bootstrap@4.3.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.19",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
-    "api-check": "npm:api-check@7.2.4",
+    "api-check": "npm:api-check@7.3.0",
     "babel": "npm:babel-core@5.4.7",
     "babel-runtime": "npm:babel-runtime@5.4.7",
     "core-js": "npm:core-js@0.9.13",
@@ -77,7 +77,7 @@ System.config({
     "npm:URIjs@1.15.1": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:amdefine@0.1.0": {
+    "npm:amdefine@0.1.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
@@ -85,13 +85,13 @@ System.config({
     },
     "npm:angular-formly-templates-bootstrap@4.3.1": {
       "angular": "npm:angular@1.4.0",
-      "angular-formly": "npm:angular-formly@6.12.0-beta.1",
-      "api-check": "npm:api-check@7.2.4",
+      "angular-formly": "npm:angular-formly@6.12.0",
+      "api-check": "npm:api-check@7.3.0",
       "bootstrap": "npm:bootstrap@3.3.4",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0"
     },
-    "npm:angular-formly@6.12.0-beta.1": {
+    "npm:angular-formly@6.12.0": {
       "angular": "npm:angular@1.4.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
@@ -106,9 +106,6 @@ System.config({
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
-    },
-    "npm:babel-runtime@5.5.4": {
-      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:bootstrap@3.3.4": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -139,7 +136,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:core-js@0.9.14": {
+    "npm:core-js@0.9.13": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
@@ -190,7 +187,7 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:source-map@0.1.43": {
-      "amdefine": "npm:amdefine@0.1.0",
+      "amdefine": "npm:amdefine@0.1.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
