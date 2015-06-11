@@ -13,5 +13,19 @@ export default class pollController {
         }
       }
     }).value()
+
+    //Fixme
+
+    this.text = 'baffo'
+    this.choices = ['baffo']
+  }
+
+  createPoll()
+  {
+    this.action.field("question").value = this.text
+    this.action.field("choices").value = this.choices
+    this.action.submit().$promise.then((response) => {
+      debugger
+    })
   }
 }
