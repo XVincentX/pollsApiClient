@@ -14,7 +14,7 @@ System.config({
 
 System.config({
   "map": {
-    "angular": "github:angular/bower-angular@1.4.0",
+    "angular": "npm:angular@1.4.0",
     "angular-animate": "npm:angular-animate@1.4.0",
     "angular-formly": "npm:angular-formly@6.12.0",
     "angular-formly-templates-bootstrap": "npm:angular-formly-templates-bootstrap@4.3.1",
