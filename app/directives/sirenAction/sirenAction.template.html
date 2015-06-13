@@ -7,9 +7,9 @@
 <form>
   <input type="input" ng-model="ctrl.text" placeholder="Type a question here">
   <div ng-repeat="choice in ctrl.choices track by $index">
-    <input type="input" ng-model="choice" placeholder="Type a choice here">
+    <input type="input" ng-model="ctrl.choices[$index]" placeholder="Type a choice here">
     <span ng-show="$last == true" ng-click="ctrl.choices.push('')">+</span>
   </div>
 
-<input type="submit" value="Create" ng-click="ctrl.createPoll()">
+  <status-button class="btn" ng-click="ctrl.createPoll()" promise="ctrl.promise">Create</status-button>
 </form>
