@@ -2,7 +2,7 @@
   <siren-action ng-repeat="action in ctrl.polls.actions" action="action"></siren-action>
   <div class="flexBox">
     <span class="pollsListHeader">We have got <b>{{ctrl.polls.questions.length}}</b> polls in the database</span>
-    <poll ng-animate="'animate'" ng-repeat="p in ctrl.polls.questions track by p.id" poll="p" delete="ctrl.deletePoll(p)"></poll>
+    <poll ng-repeat="p in ctrl.polls.questions track by p.id | limitTo: 24" poll="p" delete="ctrl.deletePoll(p)"></poll>
   </div>
   <div class="flexBox">
     <a class="btn" href="#" ng-repeat="a in ::ctrl.polls.links">{{::a.rel[0]}}</a>
