@@ -38,6 +38,25 @@ body
   box-shadow: none;
 }
 
+.btn.success
+{
+  background-color: #8BC34A;
+  border-color: #689F38;
+}
+
+.btn.danger
+{
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn.progress
+{
+  background-color: #FFF9C4;
+  border-color: #f9e85a;
+  color: black;
+}
+
 .animate-enter {
 	-webkit-transition: 1s linear all; /* Chrome */
 	transition: 1s linear all;

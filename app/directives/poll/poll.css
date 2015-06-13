@@ -53,25 +53,6 @@
   padding: .37em .5em;
 }
 
-.poll .btn.success
-{
-  background-color: #8BC34A;
-  border-color: #689F38;
-}
-
-.poll .btn.danger
-{
-  background-color: #d9534f;
-  border-color: #d43f3a;
-}
-
-.poll .btn.progress
-{
-  background-color: #FFF9C4;
-  border-color: #f9e85a;
-  color: black;
-}
-
 .poll .footer
 {
   margin-bottom: 50px;
