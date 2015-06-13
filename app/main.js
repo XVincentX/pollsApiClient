@@ -26,6 +26,10 @@ angular.module('pollsClient', [
 ])
   .constant('apiLocation', 'https://polls.apiblueprint.org/')
   //.constant('apiLocation', 'http://private-851d-pollshypermedia.apiary-mock.com/')
+  .config(['$compileProvider', function ($compileProvider) {
+  // disable debug info
+  $compileProvider.debugInfoEnabled(false);
+}]);
 
 register('pollsClient')
   .directive('application', applicationDirective)
