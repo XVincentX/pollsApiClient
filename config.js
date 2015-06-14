@@ -18,7 +18,7 @@ System.config({
     "angular-animate": "npm:angular-animate@1.4.0",
     "angular-formly": "npm:angular-formly@6.14.0",
     "angular-formly-templates-bootstrap": "npm:angular-formly-templates-bootstrap@4.3.2",
-    "angular-hy-res": "npm:angular-hy-res@0.0.21",
+    "angular-hy-res": "npm:angular-hy-res@0.0.22",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
     "api-check": "npm:api-check@7.3.0",
     "babel": "npm:babel-core@5.5.7",
@@ -95,9 +95,9 @@ System.config({
       "angular": "npm:angular@1.4.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
-    "npm:angular-hy-res@0.0.21": {
+    "npm:angular-hy-res@0.0.22": {
       "angular": "npm:angular@1.4.0",
-      "hy-res": "npm:hy-res@0.0.14",
+      "hy-res": "npm:hy-res@0.0.15",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -150,7 +150,7 @@ System.config({
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
-    "npm:hy-res@0.0.14": {
+    "npm:hy-res@0.0.15": {
       "URIjs": "npm:URIjs@1.15.1",
       "form-urlencoded": "npm:form-urlencoded@0.0.7",
       "http-link": "npm:http-link@0.3.0",

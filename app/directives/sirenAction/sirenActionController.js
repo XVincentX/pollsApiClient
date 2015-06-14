@@ -1,7 +1,7 @@
 import _ from 'lodash'
 
 export default class pollController {
-  constructor()
+  constructor(pollsService)
   {
 
     this.buttonOptions = {
@@ -11,6 +11,8 @@ export default class pollController {
       idle_class:     'idle',
       delay:          1500
     };
+
+    this.pollsService = pollsService
 
     this.model = {}
     this.fields = _(this.action.fields).map(field => {
@@ -33,9 +35,6 @@ export default class pollController {
   {
     this.action.field("question").value = this.text
     this.action.field("choices").value = this.choices
-    this.promise = this.action.submit().$promise
-    this.promise.then((response) => {
-
-    })
+    this.promise = pollsService.addPoll(this.action)
   }
 }
