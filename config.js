@@ -14,12 +14,16 @@ System.config({
 
 System.config({
   "map": {
-    "angular": "github:angular/bower-angular@1.4.0",
-    "angular-hy-res": "npm:angular-hy-res@0.0.17",
+    "angular": "npm:angular@1.4.0",
+    "angular-animate": "npm:angular-animate@1.4.0",
+    "angular-formly": "npm:angular-formly@6.14.0",
+    "angular-formly-templates-bootstrap": "npm:angular-formly-templates-bootstrap@4.3.2",
+    "angular-hy-res": "npm:angular-hy-res@0.0.22",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
-    "babel": "npm:babel-core@5.4.7",
-    "babel-runtime": "npm:babel-runtime@5.4.7",
-    "core-js": "npm:core-js@0.9.13",
+    "api-check": "npm:api-check@7.3.0",
+    "babel": "npm:babel-core@5.5.7",
+    "babel-runtime": "npm:babel-runtime@5.5.7",
+    "core-js": "npm:core-js@0.9.16",
     "css": "github:systemjs/plugin-css@0.1.12",
     "lodash": "npm:lodash@3.9.3",
     "ng-promise-status": "npm:ng-promise-status@0.1.2",
@@ -65,11 +69,6 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
-    "github:systemjs/plugin-css@0.1.11": {
-      "clean-css": "npm:clean-css@3.1.9",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "path": "github:jspm/nodelibs-path@0.1.0"
-    },
     "github:systemjs/plugin-css@0.1.12": {
       "clean-css": "npm:clean-css@3.1.9",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -78,15 +77,27 @@ System.config({
     "npm:URIjs@1.15.1": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:amdefine@0.1.0": {
+    "npm:amdefine@0.1.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-hy-res@0.0.17": {
+    "npm:angular-formly-templates-bootstrap@4.3.2": {
       "angular": "npm:angular@1.4.0",
-      "hy-res": "npm:hy-res@0.0.11",
+      "angular-formly": "npm:angular-formly@6.14.0",
+      "api-check": "npm:api-check@7.3.0",
+      "bootstrap": "npm:bootstrap@3.3.4",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0"
+    },
+    "npm:angular-formly@6.14.0": {
+      "angular": "npm:angular@1.4.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
+    },
+    "npm:angular-hy-res@0.0.22": {
+      "angular": "npm:angular@1.4.0",
+      "hy-res": "npm:hy-res@0.0.15",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -96,9 +107,17 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
+    "npm:babel-runtime@5.5.7": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:bootstrap@3.3.4": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:buffer@3.2.2": {
       "base64-js": "npm:base64-js@0.0.8",
-      "ieee754": "npm:ieee754@1.1.5",
+      "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
     },
     "npm:clean-css@3.1.9": {
@@ -120,7 +139,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:core-js@0.9.13": {
+    "npm:core-js@0.9.16": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
@@ -131,7 +150,7 @@ System.config({
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
-    "npm:hy-res@0.0.11": {
+    "npm:hy-res@0.0.15": {
       "URIjs": "npm:URIjs@1.15.1",
       "form-urlencoded": "npm:form-urlencoded@0.0.7",
       "http-link": "npm:http-link@0.3.0",
@@ -171,7 +190,7 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:source-map@0.1.43": {
-      "amdefine": "npm:amdefine@0.1.0",
+      "amdefine": "npm:amdefine@0.1.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"

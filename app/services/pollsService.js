@@ -34,31 +34,10 @@ export default class pollsService {
     let mapPolls = (hyResLinks) =>
     {
       this.$log.info("Received polls informations")
-      let questions = _(hyResLinks.questions).map((element) => {
-        let _choices = _(element.$embeddeds('choices'))
-        if (element.$embeddeds('choices').length == 0)
-          _choices = _(element.$embeddeds('choice'))
-        return {
-          id: element.$link('self').href,
-          question: element.question,
-          published_at: element.published_at,
-          actions: element.$forms(),
-          choices: _choices.map((choice) => {
-            return {
-              text: choice.choice,
-              votes: choice.votes,
-              actions: {
-                vote: choice.$form('vote')
-              }
-            }
-          }).value(),
-          total: _(element.$embeddeds('choices')).reduce((innerTot, choice) => {
-              return innerTot + choice.votes
-          }, 0)
+      let questions = _(hyResLinks.questions).map((element) => this.mapPoll(element)).value()
 
-        }
-      }).value()
-      return {actions: hyResLinks.actions, links: hyResLinks.links, questions: questions}
+      this.polls = {actions: hyResLinks.actions, links: _.filter(hyResLinks.links, (link) => {return link.rel[0] != 'self'}), questions: questions}
+      return this.polls
     }
 
     return loadEndpoint()
@@ -70,6 +49,40 @@ export default class pollsService {
   voteChoice(choice)
   {
     return this.executeAction(choice.actions.vote)
+  }
+
+  addPoll(poll)
+  {
+    return this.executeAction(poll)
+    .then((element)=>{
+      this.polls.questions.push(this.mapPoll(element))
+    })
+  }
+
+  mapPoll(element)
+  {
+    let _choices = _(element.$embeddeds('choices'))
+    if (element.$embeddeds('choices').length == 0)
+      _choices = _(element.$embeddeds('choice'))
+    return {
+      id: element.$link('self').href,
+      question: element.question,
+      published_at: element.published_at,
+      actions: element.$forms(),
+      choices: _choices.map((choice) => {
+        return {
+          text: choice.choice,
+          votes: choice.votes,
+          actions: {
+            vote: choice.$form('vote')
+          }
+        }
+      }).value(),
+      total: _(element.$embeddeds('choices')).reduce((innerTot, choice) => {
+          return innerTot + choice.votes
+      }, 0)
+
+    }
   }
 
   executeAction(action)
