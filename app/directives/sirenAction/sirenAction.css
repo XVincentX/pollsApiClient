@@ -10,6 +10,7 @@
   display: inline-block;
   font-weight: 700;
   max-width: 100%;
+  padding-bottom: 5px;
 }
 
 .sirenAction input
@@ -32,4 +33,20 @@
 .sirenAction .form-group
 {
   margin-bottom: 20px;
+}
+
+.sirenAction .choiceLine
+{
+  display: block;
+}
+
+.sirenAction .choiceLine input
+{
+  display: inline;
+  width: 90%;
+}
+
+.sirenAction .btn
+{
+  padding: .4em .8em;
 }
