@@ -1,0 +1,35 @@
+.sirenAction
+{
+  padding: 10px;
+  max-width: 768px;
+  margin: auto;
+}
+
+.sirenAction label
+{
+  display: inline-block;
+  font-weight: 700;
+  max-width: 100%;
+}
+
+.sirenAction input
+{
+  display: block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.sirenAction .question
+{
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #eee;
+}
+
+.sirenAction .form-group
+{
+  margin-bottom: 20px;
+}

@@ -47,9 +47,7 @@
 
 .poll .btn
 {
-  cursor: pointer;
   float: right;
-  transition: all 0.2s ease-in-out;
   padding: .37em .5em;
 }
 

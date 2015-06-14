@@ -3,13 +3,18 @@
   <formly-form model="ctrl.model" fields="ctrl.fields"></formly-form>
 </form>
 -->
+<div class="sirenAction">
+  <form>
+    <div class="question">
+      <label>Question</label>
+      <input type="input" ng-model="ctrl.text" placeholder="Type a question here">
+    </div>
+    <div class="form-group" ng-repeat="choice in ctrl.choices track by $index">
+      <label>Choice #{{$index + 1}}</label>
+      <input type="input" ng-model="ctrl.choices[$index]" placeholder="Type a choice here">
+      <button class="btn" ng-show="$last == true" ng-click="ctrl.choices.push('')">+</button>
+    </div>
 
-<form>
-  <input type="input" ng-model="ctrl.text" placeholder="Type a question here">
-  <div ng-repeat="choice in ctrl.choices track by $index">
-    <input type="input" ng-model="ctrl.choices[$index]" placeholder="Type a choice here">
-    <span ng-show="$last == true" ng-click="ctrl.choices.push('')">+</span>
-  </div>
-
-  <status-button class="btn" ng-click="ctrl.createPoll()" promise="ctrl.promise">Create</status-button>
-</form>
+    <status-button class="btn" ng-click="ctrl.createPoll()" promise="ctrl.promise">Create</status-button>
+  </form>
+</div>

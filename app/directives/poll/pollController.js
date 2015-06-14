@@ -11,7 +11,7 @@ export default class pollController extends executeAction {
       error_class:    'danger',
       progress_class: 'progress',
       idle_class:     'idle',
-      delay:          1500
+      delay:          500
     };
   }
 

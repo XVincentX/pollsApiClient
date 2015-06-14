@@ -9,7 +9,7 @@ export default class pollController {
       error_class:    'danger',
       progress_class: 'progress',
       idle_class:     'idle',
-      delay:          1500
+      delay:          500
     };
 
     this.pollsService = pollsService
@@ -34,7 +34,8 @@ export default class pollController {
   createPoll()
   {
     this.action.field("question").value = this.text
-    this.action.field("choices").value = this.choices
-    this.promise = pollsService.addPoll(this.action)
+    this.action.field("choices").value = _.filter(this.choices, (choice) => {return choice != ''})
+    this.promise = this.pollsService.addPoll(this.action)
+    this.choices = ['']
   }
 }

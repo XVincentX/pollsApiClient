@@ -55,7 +55,7 @@ export default class pollsService {
   {
     return this.executeAction(poll)
     .then((element)=>{
-      this.polls.questions.add(this.mapPoll(element))
+      this.polls.questions.push(this.mapPoll(element))
     })
   }
 
