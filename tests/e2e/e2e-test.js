@@ -1,12 +1,13 @@
-describe('angularjs homepage todo list', function () {
-    it('should add a todo', function () {
-        browser.get('http://www.angularjs.org');
+var chai = require('chai');
+var chaiAsPromised = require('chai-as-promised');
 
-        element(by.model('todoText')).sendKeys('write a protractor test');
-        element(by.css('[value="add"]')).click();
+chai.use(chaiAsPromised);
+var expect = chai.expect;
 
-        var todoList = element.all(by.repeater('todo in todos'));
-        expect(todoList.count()).toEqual(3);
-        expect(todoList.get(2).getText()).toEqual('write a protractor test');
-    });
+describe('angularjs homepage todo list', function() {
+  it('should add a todo', function() {
+    browser.get('http://www.google.it/');
+//    browser.pause();
+//    element(by.model('ctrl.text')).sendKeys('write first protractor test');
+  });
 });

@@ -28,6 +28,8 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
 
 # Testing
 
+[![Circle CI](https://circleci.com/gh/XVincentX/pollsApiClient.svg?style=svg)](https://circleci.com/gh/XVincentX/pollsApiClient)
+
 We use **karma** as test runner (unit test), **protractor** for E2E tests, and **mocha** as general testing framework.
 
 NOTE: protractor is actually not working very well with **Mocha**, and we should evaluate IF move to **jasmine** (another framework to learn).
