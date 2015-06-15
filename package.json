@@ -60,6 +60,7 @@
     "protractor": "^2.1.0"
   },
   "dependencies": {
+    "compression": "^1.5.0",
     "consolidate": "^0.13.1",
     "cors": "^2.6.1",
     "ejs": "^2.3.1",

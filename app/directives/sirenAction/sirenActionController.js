@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-export default class pollController {
+export default class sirenActionController {
   constructor(pollsService)
   {
 
