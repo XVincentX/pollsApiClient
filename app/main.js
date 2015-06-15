@@ -1,3 +1,4 @@
+import es6_promise from 'es6-promise'
 import angular from 'angular'
 import register from './utils/register'
 import hrRes from 'angular-hy-res'
@@ -13,6 +14,8 @@ import pollsList from './directives/pollsList/pollsList'
 import pollsService from './services/pollsService'
 import pollDirective from './directives/poll/poll'
 import sirenActionDirective from './directives/sirenAction/sirenAction'
+
+es6_promise.polyfill();
 
 angular.module('pollsClient', [
     'hrSiren',
