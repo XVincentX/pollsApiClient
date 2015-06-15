@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'production')
     })
     .then(function() {
       console.log("Bundle creation")
-      return jspm.bundleSFX('app/main', 'build.js', {sourceMaps: false, inject: false, minify: true, mangle: false})
+      return jspm.bundleSFX('app/main', 'build.js', {sourceMaps: true, inject: false, minify: true, mangle: false})
     })
     .then(function(){
       console.log('Deploy finished')
