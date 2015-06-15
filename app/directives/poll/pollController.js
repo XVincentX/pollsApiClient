@@ -32,3 +32,5 @@ export default class pollController extends executeAction {
   }
 
 }
+
+pollController.$inject = ['pollsService', '$log']

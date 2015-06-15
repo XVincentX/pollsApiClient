@@ -90,3 +90,5 @@ export default class pollsService {
     return action.submit().$promise
   }
 }
+
+pollsService.$inject = ['hrRoot', 'apiLocation', '$log']

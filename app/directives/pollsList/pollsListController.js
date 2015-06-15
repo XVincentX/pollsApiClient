@@ -16,3 +16,5 @@ export default class pollsListController {
     _.remove(this.polls.questions, {id: poll.id})
   }
 }
+
+pollsListController.$inject = ['pollsService']

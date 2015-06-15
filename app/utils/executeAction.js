@@ -18,3 +18,5 @@ export default class executeAction
         })
     }
 }
+
+executeAction.$inject = ['pollsService']
