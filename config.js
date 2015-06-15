@@ -1,4 +1,5 @@
 System.config({
+  "separateCSS": true,
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
