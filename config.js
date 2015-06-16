@@ -20,7 +20,7 @@ System.config({
     "angular-formly": "npm:angular-formly@6.14.0",
     "angular-formly-templates-bootstrap": "npm:angular-formly-templates-bootstrap@4.3.2",
     "angular-hy-res": "npm:angular-hy-res@0.0.22",
-    "angular-mocks": "npm:angular-mocks@1.4.0",
+    "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
     "api-check": "npm:api-check@7.3.0",
     "babel": "npm:babel-core@5.5.8",
     "babel-runtime": "npm:babel-runtime@5.5.8",
@@ -30,6 +30,9 @@ System.config({
     "lodash": "npm:lodash@3.9.3",
     "ng-promise-status": "npm:ng-promise-status@0.1.2",
     "text": "github:systemjs/plugin-text@0.0.2",
+    "github:angular/bower-angular-mocks@1.4.0": {
+      "angular": "github:angular/bower-angular@1.4.0"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
