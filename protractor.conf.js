@@ -1,7 +1,5 @@
 ci = process.env.CI !== undefined
 
-if (!ci)
-  require("./server")
 
 exports.config = {
   directConnect: !ci,
@@ -15,3 +13,18 @@ exports.config = {
     defaultTimeoutInterval: 30000,
   }
 };
+
+
+if (!ci)
+  require("./server")
+else
+{
+  exports.config.multiCapabilities = [{
+    'browserName': 'chrome'
+  }, {
+    'browserName': 'firefox'
+  }, {
+    'browserName': 'internet explorer',
+    'version': '11'
+  }]
+}
