@@ -7,7 +7,7 @@ var expect = chai.expect;
 describe('angularjs homepage todo list', function() {
   it('should add a todo', function() {
     browser.get('http://www.google.it/');
-//    browser.pause();
-//    element(by.model('ctrl.text')).sendKeys('write first protractor test');
+    browser.pause();
+    element(by.model('ctrl.text')).sendKeys('Nasino');
   });
 });
