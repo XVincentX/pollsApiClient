@@ -2,6 +2,8 @@ dependencies:
   pre:
     - npm install -g jspm
     - jspm config registries.github.auth $GITHUB_ACCESS_TOKEN
+  override:
+    - npm install --dev
   post:
     - wget https://saucelabs.com/downloads/sc-latest-linux.tar.gz
     - tar -xzf sc-latest-linux.tar.gz

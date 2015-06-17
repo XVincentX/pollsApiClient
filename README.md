@@ -24,7 +24,7 @@ This is just a simple client to [Polls Api](http://docs.pollsapi.apiary.io) by [
 
   ```npm start```
 
-5. Browse to [http://localhost:1234](http://localhost:1234) and have fun
+5. Browse to [http://localhost:3000](http://localhost:3000) and have fun
 
 # Testing
 
