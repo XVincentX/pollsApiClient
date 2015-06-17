@@ -10,8 +10,12 @@ dependencies:
 
 test:
   override:
-    - cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY:
+    - cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -f ~/sc_ready:
         background: true
+        pwd: sc-*-linux
+
+    - while [ ! -e ~/sc_ready ]; do sleep 1; done
+
     - node server.js:
         background: true
     - curl --retry 10 --retry-delay 2 -v http://localhost:3000
