@@ -37,16 +37,18 @@
 
 .sirenAction .choiceLine
 {
-  display: block;
+  display: list-item;
+  list-style: none;
 }
 
-.sirenAction .choiceLine input
+.sirenAction .choiceLine .inputContainer
 {
-  display: inline;
-  width: 90%;
+  overflow: hidden;
+  padding-right: .5em;
 }
 
-.sirenAction .btn
+.sirenAction .btn.plus
 {
   padding: .4em .8em;
+  float: right;
 }

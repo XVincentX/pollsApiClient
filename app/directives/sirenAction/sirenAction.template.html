@@ -12,8 +12,10 @@
     <div class="form-group" ng-repeat="choice in ctrl.choices track by $index">
       <label>Choice #{{$index + 1}}</label>
       <div class="choiceLine">
-        <input type="input" ng-model="ctrl.choices[$index]" placeholder="Type a choice here">
-        <button class="btn" ng-show="$last == true" ng-click="ctrl.choices.push('')">+</button>
+        <button class="btn plus" ng-show="$last == true" ng-click="ctrl.choices.push('')">+</button>
+        <div class="inputContainer">
+          <input type="input" ng-model="ctrl.choices[$index]" placeholder="Type a choice here">
+        </div>
       </div>
     </div>
 
