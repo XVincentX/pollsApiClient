@@ -16,16 +16,12 @@ exports.config = {
 
 if (ci)
 {
-  exports.config.multiCapabilities = [{
-    'browserName': 'chrome'
-  }, {
-    'browserName': 'firefox'
-  }, {
-    'browserName': 'internet explorer',
-    'version': '11'
-  }, {
-    'browserName': 'safari'
-  }]
+  exports.config.multiCapabilities = [
+    {'browserName': 'chrome'},
+    {'browserName': 'firefox'},
+    {'browserName': 'internet explorer','version': '11'},
+    {'browserName': 'safari'}
+  ]
 }
 else
 {
