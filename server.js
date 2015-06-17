@@ -11,7 +11,10 @@ app.set('view engine', 'html');
 app.set('views', __dirname);
 
 app.use(compress);
-app.use(cors({methods: ['GET', 'POST', 'PUT', 'DELETE']}));
+app.use(cors({
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  origin: 'https://polls.apiblueprint.org'
+}));
 
 app.get('/', function (req, res) {
   res.render('index', {env: process.env.NODE_ENV});
