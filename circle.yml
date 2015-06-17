@@ -1,7 +1,7 @@
 dependencies:
   pre:
     - npm install -g jspm
-    - jspm config registries.github.auth WFZpbmNlbnRYOmRmZTY4NDM3NzJjOTM2MThmZDRkZjg0YTVjYTIyYjc4NGY4YWIxYzE=
+    - jspm config registries.github.auth $GITHUB_ACCESS_TOKEN
   post:
     - wget https://saucelabs.com/downloads/sc-latest-linux.tar.gz
     - tar -xzf sc-latest-linux.tar.gz
@@ -12,5 +12,5 @@ test:
         background: true
     - node server.js:
         background: true
-    - sleep 10
+    - curl --retry 10 --retry-delay 2 -v http://localhost:3000
     - npm test

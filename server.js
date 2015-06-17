@@ -19,6 +19,6 @@ app.get('/', function (req, res) {
 
 app.use(express.static('./'));
 
-app.listen(process.env.PORT || process.env.port || 1234, function () {
+app.listen(process.env.PORT || process.env.port || 3000, function () {
     console.log("Server stared...");
 });

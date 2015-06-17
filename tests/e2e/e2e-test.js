@@ -6,7 +6,7 @@ var expect = chai.expect;
 
 describe('polls CRUD cycle', function() {
   describe('If I go to home page', function() {
-    browser.get('http://localhost:1234');
+    browser.get('');
   });
 
   describe('And I create a new poll', function() {
@@ -23,6 +23,6 @@ describe('polls CRUD cycle', function() {
   });
 
   it('Should have a nasino', function(){
-    expect(true).toBe(true);
+    return true;
   });
 });
