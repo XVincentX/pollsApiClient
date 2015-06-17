@@ -13,7 +13,6 @@ app.set('views', __dirname);
 app.use(compress);
 app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  origin: 'https://polls.apiblueprint.org'
 }));
 
 app.get('/', function (req, res) {
