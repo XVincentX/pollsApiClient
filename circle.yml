@@ -1,3 +1,7 @@
+machine:
+  hosts:
+    www.pollsapiclient.dev: 127.0.1.1
+
 dependencies:
   pre:
     - npm install -g jspm
