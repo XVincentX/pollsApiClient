@@ -3,7 +3,7 @@ ci = process.env.CI !== undefined
 exports.config = {
   directConnect: !ci,
   specs: 'tests/e2e/*.js',
-  baseUrl: 'http://localhost:1234',
+  baseUrl: 'http://localhost:3000',
   framework: 'jasmine2',
   sauceUser: process.env.SAUCE_USERNAME,
   sauceKey : process.env.SAUCE_ACCESS_KEY,
@@ -23,6 +23,8 @@ if (ci)
   }, {
     'browserName': 'internet explorer',
     'version': '11'
+  }, {
+    'browserName': 'safari'
   }]
 }
 else
