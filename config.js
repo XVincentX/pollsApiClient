@@ -15,11 +15,11 @@ System.config({
 
 System.config({
   "map": {
-    "angular": "npm:angular@1.4.0",
-    "angular-animate": "npm:angular-animate@1.4.0",
-    "angular-formly": "npm:angular-formly@6.14.0",
+    "angular": "npm:angular@1.4.1",
+    "angular-animate": "npm:angular-animate@1.4.1",
+    "angular-formly": "npm:angular-formly@6.14.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.22",
-    "angular-mocks": "github:angular/bower-angular-mocks@1.4.0",
+    "angular-mocks": "github:angular/bower-angular-mocks@1.4.1",
     "api-check": "npm:api-check@7.3.0",
     "babel": "npm:babel-core@5.5.8",
     "babel-runtime": "npm:babel-runtime@5.5.8",
@@ -29,8 +29,8 @@ System.config({
     "lodash": "npm:lodash@3.9.3",
     "ng-promise-status": "npm:ng-promise-status@0.1.2",
     "text": "github:systemjs/plugin-text@0.0.2",
-    "github:angular/bower-angular-mocks@1.4.0": {
-      "angular": "github:angular/bower-angular@1.4.0"
+    "github:angular/bower-angular-mocks@1.4.1": {
+      "angular": "github:angular/bower-angular@1.4.1"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -84,17 +84,17 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-formly@6.14.0": {
-      "angular": "npm:angular@1.4.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2"
+    "npm:angular-formly@6.14.1": {
+      "angular": "npm:angular@1.4.1",
+      "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "npm:angular-hy-res@0.0.22": {
-      "angular": "npm:angular@1.4.0",
+      "angular": "npm:angular@1.4.1",
       "hy-res": "npm:hy-res@0.0.15",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
-    "npm:angular@1.4.0": {
+    "npm:angular@1.4.1": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:assert@1.3.0": {
