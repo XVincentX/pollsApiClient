@@ -7,5 +7,7 @@ test:
   override:
     - cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY:
         background: true
+    - node server.js:
+        background: true
     - sleep 10
     - npm test

@@ -1,5 +1,3 @@
-require("./server")
-
 ci = process.env.CI !== undefined
 
 exports.config = {
@@ -26,4 +24,8 @@ if (ci)
     'browserName': 'internet explorer',
     'version': '11'
   }]
+}
+else
+{
+  require("./server")
 }
