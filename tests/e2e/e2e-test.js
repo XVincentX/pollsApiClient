@@ -1,28 +1,45 @@
-var chai = require('chai');
-var chaiAsPromised = require('chai-as-promised');
-
-chai.use(chaiAsPromised);
-var expect = chai.expect;
-
 describe('polls CRUD cycle', function() {
+  var question = 'What is your favourite pet?'
+  var answers = ['Cat', 'Dog', 'Elephant', 'Crocodile']
+
+
   describe('If I go to home page', function() {
     browser.get('');
   });
 
-  describe('And I create a new poll', function() {
-    values = ['Cat', 'Dog', 'Elephant', 'Crocodile']
-    element(by.model('ctrl.text')).sendKeys('What is your favourite pet?');
+  describe('Create', function() {
+    var poll = undefined
 
-    for (var i = 0; i < values.length; i++)
-    {
-      element.all(by.model('ctrl.choices[$index]')).get(i).sendKeys(values[i]);
-      element.all(by.css('.form-group .choiceLine .btn')).get(i).click();
-    }
+    describe('And I create a new poll', function() {
+      element(by.model('ctrl.text')).sendKeys(question);
 
-    element(by.buttonText('Create')).click();
-  });
+      for (var i = 0; i < answers.length; i++)
+      {
+        element.all(by.model('ctrl.choices[$index]')).get(i).sendKeys(answers[i]);
+        element.all(by.css('.form-group .choiceLine .btn')).get(i).click();
+      }
 
-  it('Should have a nasino', function(){
-    return true;
-  });
+      element(by.buttonText('Create')).click();
+    });
+
+    describe('And I get the first element', function(){
+      poll = element.all(by.css('.poll')).get(0);
+    })
+
+    it('I should find that poll with ' + question + ' as title' , function(){
+      expect(poll.element(by.css('h4')).getText()).toBe(question)
+    });
+  })
+
+  describe('Delete', function() {
+    describe('When then I try to delete that poll', function() {
+      element.all(by.css('.poll')).get(0).element(by.buttonText('delete')).click()
+      var poll = element.all(by.css('.poll')).get(0);
+
+      it('I should not find that poll with ' + question + ' as title' , function(){
+        expect(poll.element(by.css('h4')).getText()).not.toBe(question)
+      });
+
+    })
+  })
 });
