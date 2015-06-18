@@ -5,6 +5,7 @@ export default class executeAction
   constructor(pollsService)
   {
     this.pollsService = pollsService
+    this.hasError = false
   }
 
   executeAction(action) {
@@ -15,6 +16,7 @@ export default class executeAction
       })
       .catch(error => {
           $log.error(error)
+          this.hasError = true
         })
     }
 }

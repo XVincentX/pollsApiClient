@@ -1,4 +1,4 @@
-<div class="poll">
+<div class="poll" ng-class="{wobble: ctrl.hasError}">
   <h4>{{::ctrl.poll.question}}</h4>
   <h5>Published at {{::ctrl.poll.published_at | date: short}}</h5>
   <ul>
