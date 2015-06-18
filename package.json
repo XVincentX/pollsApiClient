@@ -56,7 +56,6 @@
     "karma-jspm": "^1.1.4",
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^1.0.2",
-    "karma-sauce-launcher": "^0.2.11",
     "mocha": "^2.2.1",
     "protractor": "^2.1.0"
   },
