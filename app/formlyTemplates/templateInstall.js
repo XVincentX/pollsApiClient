@@ -11,9 +11,6 @@ angular.module(moduleName, [])
     template: text,
     defaultOptions: {
       defaultValue: '',
-      templateOptions: {
-        required: true
-      }
     }
   })
 
