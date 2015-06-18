@@ -4,6 +4,7 @@ import register from './utils/register'
 import hrRes from 'angular-hy-res'
 import formly from 'angular-formly'
 import angularAnimate from 'angular-animate'
+import formlyTemplates from './formlyTemplates/templateInstall'
 import 'ng-promise-status'
 import './directives/progressBar/progressBar'
 
@@ -22,6 +23,7 @@ angular.module('pollsClient', [
     hrRes,
     formly,
     angularAnimate,
+    formlyTemplates,
     'ngPromiseStatus',
     'isteven-omni-bar'
 ])

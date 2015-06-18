@@ -17,7 +17,7 @@ export default class sirenActionController {
     this.model = {}
     this.fields = _(this.action.fields).map(field => {
       return {
-        type: 'input',
+        type: this.action.href + this.action.name + '.' + field.type,
         key: field.name,
         templateOptions: {
           label: field.name
