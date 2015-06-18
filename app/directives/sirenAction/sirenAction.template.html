@@ -1,23 +1,4 @@
-<form>
+<form class="{{ctrl.action.href + ctrl.action.name}}">
   <formly-form model="ctrl.model" fields="ctrl.fields"></formly-form>
+  <status-button class="btn" ng-click="ctrl.createPoll()" promise="ctrl.promise" options="ctrl.buttonOptions">Create</status-button>
 </form>
-
-<div class="sirenAction">
-  <form>
-    <div class="question">
-      <label>Question</label>
-      <input type="input" ng-model="ctrl.text" placeholder="Type a question here">
-    </div>
-    <div class="form-group" ng-repeat="choice in ctrl.choices track by $index">
-      <label>Choice #{{$index + 1}}</label>
-      <div class="choiceLine">
-        <button class="btn plus" ng-show="$last == true" ng-click="ctrl.choices.push('')">+</button>
-        <div class="inputContainer">
-          <input type="input" ng-model="ctrl.choices[$index]" placeholder="Type a choice here">
-        </div>
-      </div>
-    </div>
-
-    <status-button class="btn" ng-click="ctrl.createPoll()" promise="ctrl.promise" options="ctrl.buttonOptions">Create</status-button>
-  </form>
-</div>

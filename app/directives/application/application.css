@@ -78,3 +78,64 @@ body
 .ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
 .ng-leave           { animation: rotateFall 0.5s both ease-in; z-index: 9999; }
 .ng-move            { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+
+form
+{
+  padding: 10px;
+  max-width: 768px;
+  margin: auto;
+}
+
+form label
+{
+  display: inline-block;
+  font-weight: 700;
+  max-width: 100%;
+  padding-bottom: 5px;
+}
+
+form input
+{
+  display: block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form .question
+{
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #eee;
+}
+
+.question label:first-letter
+{
+  text-transform: capitalize;
+}
+
+form .form-group
+{
+  margin-bottom: 20px;
+}
+
+form .choiceLine
+{
+  display: list-item;
+  list-style: none;
+}
+
+form .choiceLine .inputContainer
+{
+  overflow: hidden;
+  padding-right: .5em;
+}
+
+form .btn.plus
+{
+  padding: .4em .8em;
+  float: right;
+}
+

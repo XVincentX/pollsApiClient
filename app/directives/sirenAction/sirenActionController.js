@@ -1,8 +1,10 @@
 import _ from 'lodash'
+import executeAction from '../../utils/executeAction'
 
-export default class sirenActionController {
+export default class sirenActionController extends executeAction {
   constructor(pollsService)
   {
+    super(pollsService)
 
     this.buttonOptions = {
       success_class:  'success',
@@ -12,31 +14,25 @@ export default class sirenActionController {
       delay:          500
     };
 
-    this.pollsService = pollsService
-
     this.model = {}
+
     this.fields = _(this.action.fields).map(field => {
       return {
-        type: this.action.href + this.action.name + '.' + field.type,
+        type: this.action.name + '.' + field.type,
         key: field.name,
         templateOptions: {
           label: field.name
         }
       }
     }).value()
-
-    //Fixme
-
-    this.text = ''
-    this.choices = ['']
   }
 
   createPoll()
   {
-    this.action.field("question").value = this.text
-    this.action.field("choices").value = _.filter(this.choices, (choice) => {return choice != ''})
+    debugger
+    this.action.field("question").value = this.model.question
+    this.action.field("choices").value = _.filter(this.model.choices, (choice) => {return choice != ''})
     this.promise = this.pollsService.addPoll(this.action)
-    this.choices = ['']
   }
 }
 

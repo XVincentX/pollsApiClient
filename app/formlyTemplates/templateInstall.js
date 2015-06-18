@@ -7,13 +7,22 @@ const moduleName = 'formlyTemplates'
 angular.module(moduleName, [])
 .config(function(formlyConfigProvider) {
   formlyConfigProvider.setType({
-    name: '/questionscreate.text',
-    template: text
+    name: 'create.text',
+    template: text,
+    defaultOptions: {
+      defaultValue: '',
+      templateOptions: {
+        required: true
+      }
+    }
   })
 
   formlyConfigProvider.setType({
-    name: '/questionscreate.array[text]',
-    template: textArray
+    name: 'create.array[text]',
+    template: textArray,
+    defaultOptions: {
+      defaultValue: ['']
+    }
   })
 
 })

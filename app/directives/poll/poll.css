@@ -34,7 +34,7 @@
   margin: 10px;
 }
 
-.poll button
+.poll button:first-letter
 {
   text-transform: capitalize;
 }
