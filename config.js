@@ -84,10 +84,6 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-formly@6.14.1": {
-      "angular": "npm:angular@1.4.1",
-      "path": "github:jspm/nodelibs-path@0.1.0"
-    },
     "npm:angular-formly@6.15.1": {
       "angular": "npm:angular@1.4.1",
       "path": "github:jspm/nodelibs-path@0.1.0"

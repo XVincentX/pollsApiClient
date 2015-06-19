@@ -2,9 +2,9 @@ import _ from 'lodash'
 import executeAction from '../../utils/executeAction'
 
 export default class sirenActionController extends executeAction {
-  constructor(pollsService)
+  constructor(pollsService, $log)
   {
-    super(pollsService)
+    super(pollsService, $log)
 
     this.buttonOptions = {
       success_class:  'success',
