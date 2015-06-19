@@ -5,6 +5,14 @@
   justify-content: space-between;
 }
 
+@media (max-width: 610px)
+{
+    .flexBox
+    {
+        justify-content: center;
+    }
+}
+
 .pollsList .pollsListHeader
 {
   width: 100%;
