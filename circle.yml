@@ -10,7 +10,7 @@ dependencies:
 
 test:
   override:
-    - cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -D apiblueprint.org,githubusercontent.com -f ~/sc_ready:
+    - cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --direct-domains *.apiblueprint.org,*.githubusercontent.com -f ~/sc_ready:
         background: true
 
     - while [ ! -e ~/sc_ready ]; do sleep 1; done

@@ -1,6 +1,5 @@
 import template from "./sirenAction.template.html!text"
 import controller from './sirenActionController'
-import './sirenAction.css!'
 
 export default class sirenActionDirective
 {

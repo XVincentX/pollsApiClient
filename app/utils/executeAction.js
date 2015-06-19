@@ -2,19 +2,22 @@ import _ from 'lodash'
 
 export default class executeAction
 {
-  constructor(pollsService)
+  constructor(pollsService, $log)
   {
     this.pollsService = pollsService
+    this.$log = $log
   }
 
   executeAction(action) {
+      this.hasError = false
       return this.pollsService.executeAction(action)
         .then(() => {
         if (_.isFunction(this[action.name]))
           this[action.name].apply(this.poll)
       })
       .catch(error => {
-          $log.error(error)
+          this.$log.error(error)
+          this.hasError = true
         })
     }
 }

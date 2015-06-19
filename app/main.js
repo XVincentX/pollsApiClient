@@ -4,6 +4,8 @@ import register from './utils/register'
 import hrRes from 'angular-hy-res'
 import formly from 'angular-formly'
 import angularAnimate from 'angular-animate'
+import formlyTemplates from './formlyTemplates/templateInstall'
+import apiCheck from 'api-check'
 import 'ng-promise-status'
 import './directives/progressBar/progressBar'
 
@@ -15,6 +17,7 @@ import pollDirective from './directives/poll/poll'
 import sirenActionDirective from './directives/sirenAction/sirenAction'
 
 es6_promise.polyfill();
+apiCheck.globalConfig.disabled = true
 
 angular.module('pollsClient', [
     'hrSiren',
@@ -22,6 +25,7 @@ angular.module('pollsClient', [
     hrRes,
     formly,
     angularAnimate,
+    formlyTemplates,
     'ngPromiseStatus',
     'isteven-omni-bar'
 ])

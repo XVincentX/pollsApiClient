@@ -24,7 +24,7 @@
   padding: .6em .8em;
 }
 
-.pollsList a
+.pollsList a:first-letter
 {
   text-transform: capitalize;
 }
