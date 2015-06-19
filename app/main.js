@@ -29,7 +29,7 @@ angular.module('pollsClient', [
     'ngPromiseStatus',
     'isteven-omni-bar'
 ])
-  .constant('apiLocation', 'http://polls.apiblueprint.org/')
+  .constant('apiLocation', 'https://polls.apiblueprint.org/')
   //.constant('apiLocation', 'http://private-851d-pollshypermedia.apiary-mock.com/')
   .config(['$compileProvider', function ($compileProvider) {
   // disable debug info
