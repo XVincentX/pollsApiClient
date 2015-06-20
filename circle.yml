@@ -2,9 +2,8 @@ dependencies:
   pre:
     - npm install -g jspm
     - jspm config registries.github.auth $GITHUB_ACCESS_TOKEN
-  override:
-    - npm install --dev
   post:
+    - NODE_ENV=production npm install
     - wget https://saucelabs.com/downloads/sc-4.3.8-linux.tar.gz
     - tar -xzf sc-4.3.8-linux.tar.gz
 
