@@ -1,6 +1,8 @@
+var faker = require('faker')
+
 describe('polls CRUD cycle', function() {
-  var question = 'What is your favourite pet?'
-  var answers = ['Cat', 'Dog', 'Elephant', 'Crocodile']
+  var question = 'What could be a good surname for ' + faker.name.firstName() + '?'
+  var answers = [ faker.name.lastName(), faker.name.lastName(), faker.name.lastName(), faker.name.lastName() ]
 
 
   describe('If I go to home page', function() {
@@ -11,11 +13,11 @@ describe('polls CRUD cycle', function() {
     var poll = undefined
 
     describe('And I create a new poll', function() {
-      element(by.model('ctrl.text')).sendKeys(question);
+      element(by.css('.question input')).sendKeys(question);
 
       for (var i = 0; i < answers.length; i++)
       {
-        element.all(by.model('ctrl.choices[$index]')).get(i).sendKeys(answers[i]);
+        element.all(by.css('.inputContainer input')).get(i).sendKeys(answers[i]);
         element.all(by.css('.form-group .choiceLine .btn')).get(i).click();
       }
 

@@ -29,7 +29,6 @@ export default class sirenActionController extends executeAction {
 
   createPoll()
   {
-    debugger
     this.action.field("question").value = this.model.question
     this.action.field("choices").value = _.filter(this.model.choices, (choice) => {return choice != ''})
     this.promise = this.pollsService.addPoll(this.action)

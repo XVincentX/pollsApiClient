@@ -49,6 +49,7 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "chai-as-promised": "^5.1.0",
+    "faker": "^2.1.5",
     "karma": "^0.12.33",
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
