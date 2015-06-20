@@ -7,6 +7,8 @@ exports.config = {
   framework: 'jasmine2',
   sauceUser: process.env.SAUCE_USERNAME,
   sauceKey : process.env.SAUCE_ACCESS_KEY,
+  allScriptsTimeout: 40000,
+  getPageTimeout: 40000,
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
