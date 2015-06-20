@@ -11,7 +11,13 @@ angular.module(moduleName, [])
     template: text,
     defaultOptions: {
       defaultValue: '',
-    }
+      validators: {
+        notEmpty: function($viewValue, $modelValue) {
+          let value = $modelValue || $viewValue
+          return value.length > 0
+        }
+      }
+    },
   })
 
   formlyConfigProvider.setType({
