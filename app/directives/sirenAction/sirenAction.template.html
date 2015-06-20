@@ -1,4 +1,4 @@
-<form class="{{ctrl.action.href + ctrl.action.name}}" ng-submit="ctrl.createPoll()">
+<form class="{{ctrl.action.href + ctrl.action.name}}" ng-submit="ctrl.executeAction()">
   <formly-form model="ctrl.model" fields="ctrl.fields"></formly-form>
   <status-button class="btn" promise="ctrl.promise" options="ctrl.buttonOptions">Create</status-button>
 </form>

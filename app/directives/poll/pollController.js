@@ -15,10 +15,10 @@ export default class pollController extends executeAction {
     };
   }
 
-  vote(choice) {
+  votePoll(choice) {
     if (choice.actions.vote != null)
     {
-      choice.promise = this.pollsService.voteChoice(choice)
+      choice.promise = this.executeAction(choice.actions.vote)
 
       choice.promise.then(() => {
           this.$log.info(`Voted ${choice.text}`)
@@ -26,7 +26,7 @@ export default class pollController extends executeAction {
           this.poll.total++;
       })
         .catch(error => {
-        alert(error)
+        $log.error(error)
       })
     }
   }

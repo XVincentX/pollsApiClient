@@ -27,11 +27,14 @@ export default class sirenActionController extends executeAction {
     }).value()
   }
 
-  createPoll()
+  executeAction()
   {
-    this.action.field("question").value = this.model.question
-    this.action.field("choices").value = _.filter(this.model.choices, (choice) => {return choice != ''})
-    this.promise = this.pollsService.addPoll(this.action)
+    Object.keys(this.model).forEach((key) => {
+      this.action.field(key).value = this.model[key]
+    });
+
+    this.promise = super.executeAction(this.action)
+    return this.promise
   }
 }
 

@@ -46,17 +46,9 @@ export default class pollsService {
       .catch((error) => {this.$log.error(`Error during hypermedia fetching: ${error}`)})
   }
 
-  voteChoice(choice)
+  create(poll)
   {
-    return this.executeAction(choice.actions.vote)
-  }
-
-  addPoll(poll)
-  {
-    return this.executeAction(poll)
-    .then((element)=>{
-      this.polls.questions.push(this.mapPoll(element))
-    })
+      this.polls.questions.push(this.mapPoll(poll))
   }
 
   mapPoll(element)
@@ -87,7 +79,10 @@ export default class pollsService {
 
   executeAction(action)
   {
-    return action.submit().$promise
+    return action.submit().$promise.then((element) => {
+      if (_.isFunction(this[action.name]))
+        this[action.name].apply(this, [element])
+    })
   }
 }
 
