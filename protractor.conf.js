@@ -20,7 +20,10 @@ if (ci)
     {'browserName': 'chrome'},
     {'browserName': 'firefox'},
     {'browserName': 'internet explorer','version': '11'},
-    {'browserName': 'safari'}
+    {'browserName': 'safari'},
+    {'browserName': 'iphone', 'deviceName': 'iPhone Simulator' },
+    {'browserName': 'iphone', 'deviceName': 'iPad Simulator' },
+    {'browserName': 'android', 'deviceName': 'Google Nexus 7 HD Emulator' }
   ]
 }
 else

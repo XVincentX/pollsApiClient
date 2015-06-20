@@ -29,6 +29,7 @@ A simple hypermedia enabled application on top of [Polls Api](http://docs.pollsa
 # Testing
 
 [![Circle CI](https://circleci.com/gh/XVincentX/pollsApiClient.svg?style=svg)](https://circleci.com/gh/XVincentX/pollsApiClient)
+[![Sauce Test Status](https://saucelabs.com/buildstatus/vincenzchianese)](https://saucelabs.com/u/vincenzchianese)
 
 We use **karma** as test runner (unit test), **protractor** for E2E tests, and **mocha** as general testing framework.
 
@@ -50,7 +51,7 @@ npm test
 ```
 
 **NOTE:** protractor does not work very well with **Mocha**, so _jasmine_ is used in place for e2e tests.
-E2E tests run on [SauceLabs](http://saucelabs.com) and they are [publicly accessible](http://qualcheposto)
+E2E tests run on [SauceLabs](http://saucelabs.com) and they are publicly accessible.
 
 # Deploy
 
