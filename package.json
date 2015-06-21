@@ -61,11 +61,14 @@
     "protractor": "^2.1.0"
   },
   "dependencies": {
+    "autoprefixer": "^5.2.0",
+    "autoprefixer-core": "^5.2.0",
     "compression": "^1.5.0",
     "consolidate": "^0.13.1",
     "cors": "^2.6.1",
     "ejs": "^2.3.1",
     "express": "^4.12.1",
-    "jspm": "^0.15.7"
+    "jspm": "^0.15.7",
+    "postcss": "^4.1.11"
   }
 }
