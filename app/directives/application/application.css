@@ -59,6 +59,14 @@ body
   color: black;
 }
 
+.btn:disabled
+{
+  cursor: default;
+  pointer-events: none;
+  color: #c0c0c0;
+  background-color: #ffffff;
+}
+
 @keyframes rotateFall {
     0%      { transform: rotateZ(0deg); }
     20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
