@@ -9,7 +9,7 @@ describe('polls CRUD cycle', function() {
     browser.get('');
   });
 
-  describe('Create', function() {
+  it('Create', function() {
     var poll = undefined
 
     describe('And I create a new poll', function() {
@@ -34,7 +34,7 @@ describe('polls CRUD cycle', function() {
     });
   })
 
-  describe('Delete', function() {
+  it('Delete', function() {
     describe('When then I try to delete that poll', function() {
       return element.all(by.css('.poll')).get(0).element(by.buttonText('delete')).click()
     })
