@@ -18,7 +18,8 @@ describe('polls CRUD cycle', function() {
       for (var i = 0; i < answers.length; i++)
       {
         element.all(by.css('.inputContainer input')).get(i).sendKeys(answers[i]);
-        element.all(by.css('.form-group .choiceLine .btn')).get(i).click();
+        if (i != answers.length - 1)
+          element.all(by.css('.form-group .choiceLine .btn')).get(i).click();
       }
 
       return element(by.buttonText('Create')).click();
