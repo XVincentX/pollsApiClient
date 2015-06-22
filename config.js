@@ -21,8 +21,8 @@ System.config({
     "angular-hy-res": "npm:angular-hy-res@0.0.23",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.1",
     "api-check": "npm:api-check@7.4.0",
-    "babel": "npm:babel-core@5.5.8",
-    "babel-runtime": "npm:babel-runtime@5.5.8",
+    "babel": "npm:babel-core@5.6.3",
+    "babel-runtime": "npm:babel-runtime@5.6.3",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.12",
     "es6-promise": "npm:es6-promise@2.3.0",
@@ -101,6 +101,9 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:babel-runtime@5.5.8": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:babel-runtime@5.6.3": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:buffer@3.2.2": {
