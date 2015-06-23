@@ -55,7 +55,7 @@
     "karma-chai-as-promised": "^0.1.2",
     "karma-chrome-launcher": "^0.1.7",
     "karma-jspm": "^1.1.4",
-    "karma-mocha": "^0.1.10",
+    "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.0.2",
     "mocha": "^2.2.1",
     "protractor": "^2.1.0"
