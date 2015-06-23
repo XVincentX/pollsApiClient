@@ -1,9 +1,10 @@
 <div class="form-group" ng-repeat="choice in model[options.key] track by $index">
   <label>Choice #{{$index + 1}}</label>
   <div class="choiceLine">
-    <button formnovalidate type="button" class="btn plus" ng-show="$last == true" ng-click="model[options.key].push('')">+</button>
+    <button tabindex="1" formnovalidate type="button" class="btn plus remove" ng-show="$first == false" ng-click="model[options.key].splice($index, 1)">-</button>
+    <button tabindex="-1" formnovalidate type="button" class="btn plus add" ng-show="$last == true" ng-click="model[options.key].push('')">+</button>
     <div class="inputContainer">
-      <input type="input" ng-model="model[options.key][$index]" placeholder="Type a choice here">
+      <input tabindex="0" type="input" ng-model="model[options.key][$index]" placeholder="Type a choice here">
     </div>
   </div>
 </div>

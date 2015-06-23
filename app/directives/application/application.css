@@ -144,6 +144,7 @@ form .choiceLine .inputContainer
 form .btn.plus
 {
   padding: .4em .8em;
+  margin-right: .5em;
   float: right;
 }
 
