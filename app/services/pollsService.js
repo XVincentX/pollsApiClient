@@ -9,18 +9,12 @@ export default class pollsService {
 
   getPolls()
   {
-    let loadEndpoint = () =>
+    let loadPolls = () =>
     {
-      return this.hrRoot(this.apiLocation)
+      this.questionsLink = this.hrRoot(this.apiLocation)
         .follow()
-        .$promise
-        .then((hrRootLink) => { return hrRootLink })
-    }
+        .$followOne("questions")
 
-    let loadPolls = (hrRootLink) =>
-    {
-      this.$log.info("Fetched hypermedia api endpoint from polls")
-      this.questionsLink = hrRootLink.$followOne("questions")
       return this.questionsLink
         .$promise
         .then((qLink) => {
@@ -40,8 +34,7 @@ export default class pollsService {
       return this.polls
     }
 
-    return loadEndpoint()
-      .then(loadPolls)
+    return loadPolls()
       .then(mapPolls)
       .catch((error) => {this.$log.error(`Error during hypermedia fetching: ${error}`)})
   }
