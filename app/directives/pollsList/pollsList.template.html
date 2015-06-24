@@ -5,6 +5,6 @@
     <poll ng-repeat="p in ctrl.polls.questions track by p.id" poll="p" delete="ctrl.deletePoll(p)"></poll>
   </div>
   <div class="flexBox">
-    <a class="btn" href="#" ng-repeat="link in ::ctrl.polls.links" ng-click="ctrl.followLink(link.rel[0])">{{::link.rel[0]}}</a>
+    <a class="btn" href ng-repeat="link in ::ctrl.polls.links" ng-click="ctrl.followLink(link.rel[0])">{{::link.rel[0]}}</a>
   </div>
 </div>
