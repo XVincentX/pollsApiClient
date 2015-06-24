@@ -15,6 +15,11 @@ export default class pollsListController {
   {
     _.remove(this.polls.questions, {id: poll.id})
   }
+
+  followLink(link)
+  {
+    this.pollsService.follow(link)
+  }
 }
 
 pollsListController.$inject = ['pollsService']
