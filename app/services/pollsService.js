@@ -7,35 +7,42 @@ export default class pollsService {
     this.$log = $log
   }
 
-  getPolls()
+  loadPolls()
   {
-    let loadPolls = () =>
-    {
-      this.questionsLink = this.hrRoot(this.apiLocation)
-        .follow()
-        .$followOne("questions")
+    return this.hrRoot(this.apiLocation)
+      .follow()
+      .$followOne("questions")
+      .$promise
+  }
 
-      return this.questionsLink
-        .$promise
-        .then((qLink) => {
-        let questions = qLink.$embeddeds('questions')
-        if (questions.length == 0)
-          return {questions: qLink.$embeddeds('question'), actions: qLink.$forms(), links: qLink.$links()}
-        return {questions: questions, actions: qLink.$forms(), links: qLink.$links()}
-      })
+  extractData(qLink)
+  {
+      let questions = qLink.$embeddeds('questions')
+      return {questions: questions, actions: qLink.$forms(), links: qLink.$links()}
+  }
+
+  mapPolls(questionsObject)
+  {
+    this.$log.info("Received polls informations")
+    let questions = _(questionsObject.questions).map((element) => this.mapPoll.bind(this)(element)).value()
+
+    this.polls = {
+      actions: questionsObject.actions,
+      links: _.filter(questionsObject.links, (link) => {return link.rel[0] != 'self'}),
+      questions: questions
     }
 
-    let mapPolls = (hyResLinks) =>
-    {
-      this.$log.info("Received polls informations")
-      let questions = _(hyResLinks.questions).map((element) => this.mapPoll(element)).value()
+    return this.polls
+  }
 
-      this.polls = {actions: hyResLinks.actions, links: _.filter(hyResLinks.links, (link) => {return link.rel[0] != 'self'}), questions: questions}
-      return this.polls
-    }
+  getPolls(source)
+  {
+    if (_.isUndefined(source))
+      source = this.loadPolls()
 
-    return loadPolls()
-      .then(mapPolls)
+    return source
+      .then(this.extractData.bind(this))
+      .then(this.mapPolls.bind(this))
       .catch((error) => {this.$log.error(`Error during hypermedia fetching: ${error}`)})
   }
 
@@ -68,6 +75,11 @@ export default class pollsService {
       }, 0)
 
     }
+  }
+
+  follow(link)
+  {
+    return this.getPolls.bind(this)(link.follow().$promise)
   }
 
   executeAction(action)

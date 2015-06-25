@@ -5,10 +5,8 @@ export default class pollsListController {
     this.pollsService = pollsService
 
     this.pollsService.getPolls()
-      .then((polls) => {
-      this.polls = polls
-    })
-    .catch(() => { alert("Fanculo amico"); })
+      .then(this.updateLocalPollsInstance.bind(this))
+      .catch(() => { alert("Fanculo amico"); })
   }
 
   deletePoll(poll)
@@ -19,6 +17,13 @@ export default class pollsListController {
   followLink(link)
   {
     this.pollsService.follow(link)
+      .then(this.updateLocalPollsInstance.bind(this))
+      .catch(() => { alert("Fanculo amico"); })
+  }
+
+  updateLocalPollsInstance(polls)
+  {
+      this.polls = polls
   }
 }
 
