@@ -24,7 +24,7 @@ export default class pollsService {
   mapPolls(questionsObject)
   {
     this.$log.info("Received polls informations")
-    let questions = _(questionsObject.questions).map((element) => this.mapPoll.bind(this)(element)).value()
+    let questions = _(questionsObject.questions).map((element) => this.mapPoll.bind(this)(element)).reverse().value()
 
     this.polls = {
       actions: questionsObject.actions,
@@ -48,7 +48,7 @@ export default class pollsService {
 
   create(poll)
   {
-      this.polls.questions.push(this.mapPoll(poll))
+      this.polls.questions.unshift(this.mapPoll(poll))
   }
 
   mapPoll(element)
@@ -69,7 +69,7 @@ export default class pollsService {
             vote: choice.$form('vote')
           }
         }
-      }).value(),
+      }).reverse().value(),
       total: _(element.$embeddeds('choices')).reduce((innerTot, choice) => {
           return innerTot + choice.votes
       }, 0)
