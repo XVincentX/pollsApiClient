@@ -17,12 +17,12 @@ System.config({
   "map": {
     "angular": "npm:angular@1.4.1",
     "angular-animate": "npm:angular-animate@1.4.1",
-    "angular-formly": "npm:angular-formly@6.15.2",
+    "angular-formly": "npm:angular-formly@6.16.0",
     "angular-hy-res": "npm:angular-hy-res@0.0.23",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.1",
     "api-check": "npm:api-check@7.5.0",
-    "babel": "npm:babel-core@5.6.5",
-    "babel-runtime": "npm:babel-runtime@5.6.5",
+    "babel": "npm:babel-core@5.6.11",
+    "babel-runtime": "npm:babel-runtime@5.6.11",
     "clean-css": "npm:clean-css@3.3.4",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
@@ -93,6 +93,10 @@ System.config({
       "angular": "npm:angular@1.4.1",
       "path": "github:jspm/nodelibs-path@0.1.0"
     },
+    "npm:angular-formly@6.16.0": {
+      "angular": "npm:angular@1.4.1",
+      "path": "github:jspm/nodelibs-path@0.1.0"
+    },
     "npm:angular-hy-res@0.0.23": {
       "angular": "npm:angular@1.4.1",
       "hy-res": "npm:hy-res@0.0.16",
@@ -106,6 +110,9 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:babel-runtime@5.5.8": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:babel-runtime@5.6.11": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:babel-runtime@5.6.3": {
