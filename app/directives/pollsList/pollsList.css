@@ -46,3 +46,8 @@
 {
    content: '\00ab  '
 }
+
+.pollsContainer
+{
+  margin-top: 15px;
+}

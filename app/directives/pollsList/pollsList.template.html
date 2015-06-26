@@ -1,9 +1,15 @@
 <div class="pollsList">
   <siren-action ng-repeat="action in ctrl.polls.actions" action="action"></siren-action>
-  <div class="flexBox">
+  <ng-include src="'buttonBar.html'"></ng-include>
+  <div class="flexBox pollsContainer">
     <poll ng-repeat="p in ctrl.polls.questions track by p.id" poll="p" delete="ctrl.deletePoll(p)"></poll>
   </div>
+  <ng-include src="'buttonBar.html'"></ng-include>
+</div>
+
+
+<script type="text/ng-template" id="buttonBar.html">
   <div class="flexBox">
     <a class="btn" href ng-repeat="link in ctrl.polls.links" ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>
   </div>
-</div>
+</script>
