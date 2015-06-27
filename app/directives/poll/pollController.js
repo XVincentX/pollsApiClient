@@ -16,8 +16,6 @@ export default class pollController extends executeAction {
   }
 
   votePoll(choice) {
-    if (choice.actions.vote != null)
-    {
       choice.promise = this.executeAction(choice.actions.vote)
 
       choice.promise.then(() => {
@@ -28,9 +26,7 @@ export default class pollController extends executeAction {
         .catch(error => {
         $log.error(error)
       })
-    }
   }
-
 }
 
 pollController.$inject = ['pollsService', '$log']
