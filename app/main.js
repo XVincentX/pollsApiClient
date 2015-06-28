@@ -34,7 +34,7 @@ angular.module('pollsClient', [
   .config(['$compileProvider', function ($compileProvider) {
   // disable debug info
   $compileProvider.debugInfoEnabled(false);
-}]);
+}])
 
 register('pollsClient')
   .directive('application', applicationDirective)
