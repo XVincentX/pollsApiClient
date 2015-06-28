@@ -4,7 +4,9 @@ PollsApiClient made in AngularJs.
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-A simple hypermedia enabled application on top of [Polls Api](http://docs.pollsapi.apiary.io) by [Apiary](http://www.apiary.io)
+A simple hypermedia enabled application on top of [Polls Api](http://docs.pollsapi.apiary.io) by [Apiary](http://www.apiary.io).
+
+Want to know more? Read the [blog post serie](http://localhost:4000/2015/05/30/hypermedia-client-in-angularjs.html)
 
 # Installation instructions
 
