@@ -15,18 +15,9 @@ export default class pollController extends executeAction {
     };
   }
 
-  votePoll(choice) {
-      choice.promise = this.executeAction(choice.actions.vote)
-
-      choice.promise.then(() => {
-          this.$log.info(`Voted ${choice.text}`)
-          choice.votes++;
-          this.poll.total++;
-      })
-        .catch(error => {
-        $log.error(error)
-      })
+  vote(choice) {
+    choice[1].votes++;
   }
-}
 
+}
 pollController.$inject = ['pollsService', '$log']

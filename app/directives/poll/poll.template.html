@@ -3,7 +3,7 @@
   <h5>Published at {{::ctrl.poll.published_at | date: short}}</h5>
   <ul>
     <li ng-repeat="choice in ::ctrl.poll.choices">
-      <status-button class="btn" ng-show="choice.actions.vote != null" ng-click="ctrl.votePoll(choice)" promise="choice.promise" options="ctrl.buttonOptions">Vote</status-button>
+      <status-button ng-repeat="action in ::choice.actions" class="btn" ng-click="ctrl.executeAction(action, choice)" promise="action.$promise" options="ctrl.buttonOptions">{{::action.$promise}}</status-button>
       <div class="omnibarContainer">
         <isteven-omni-bar current-value="choice.votes" max-value="ctrl.poll.total">
           {{::choice.text}}: {{choice.votes}}

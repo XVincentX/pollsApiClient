@@ -9,17 +9,23 @@ export default class executeAction
   }
 
   executeAction(action) {
-      this.hasError = false
-      return this.pollsService.executeAction(action)
-        .then(() => {
-        if (_.isFunction(this[action.name]))
-          this[action.name].apply(this.poll)
+    this.hasError = false
+      action.$promise = this.pollsService.executeAction(action)
+      .then((result) => {
+        if (_.isFunction(this[action.name])) {
+          if (_.isUndefined(result))
+            result = arguments
+
+          this[action.name].apply(undefined, [result])
+        }
+    })
+    .catch(error => {
+        this.$log.error(error)
+        this.hasError = true
       })
-      .catch(error => {
-          this.$log.error(error)
-          this.hasError = true
-        })
-    }
+
+    return action.$promise
+  }
 }
 
 executeAction.$inject = ['pollsService']
