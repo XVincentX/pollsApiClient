@@ -2,7 +2,7 @@ import _ from 'lodash'
 import executeAction from '../../utils/executeAction'
 
 
-export default class pollController extends executeAction {
+class pollController extends executeAction {
   constructor(pollsService, $log) {
     super(pollsService)
     this.$log = $log
@@ -21,3 +21,4 @@ export default class pollController extends executeAction {
 
 }
 pollController.$inject = ['pollsService', '$log']
+export default pollController

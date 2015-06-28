@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-export default class executeAction
+class executeAction
 {
   constructor(pollsService, $log)
   {
@@ -28,4 +28,5 @@ export default class executeAction
   }
 }
 
-executeAction.$inject = ['pollsService']
+executeAction.$inject = ['pollsService', '$log']
+export default executeAction

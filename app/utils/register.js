@@ -52,6 +52,7 @@ export default function register(appName) {
     }
 
     function service(name, contructorFn) {
+        debugger
         app.service(name, contructorFn);
         return this;
     }

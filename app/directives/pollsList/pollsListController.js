@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-export default class pollsListController {
+class pollsListController {
   constructor(pollsService) {
     this.pollsService = pollsService
 
@@ -28,3 +28,4 @@ export default class pollsListController {
 }
 
 pollsListController.$inject = ['pollsService']
+export default pollsListController

@@ -1,6 +1,6 @@
 import _ from "lodash"
 
-export default class pollsService {
+class pollsService {
   constructor(hrRoot, apiLocation, $log) {
     this.hrRoot = hrRoot
     this.apiLocation = apiLocation
@@ -92,3 +92,4 @@ export default class pollsService {
 }
 
 pollsService.$inject = ['hrRoot', 'apiLocation', '$log']
+export default pollsService

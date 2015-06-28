@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import executeAction from '../../utils/executeAction'
 
-export default class sirenActionController extends executeAction {
+class sirenActionController extends executeAction {
   constructor(pollsService, $log)
   {
     super(pollsService, $log)
@@ -39,3 +39,5 @@ export default class sirenActionController extends executeAction {
 }
 
 sirenActionController.$inject = ['pollsService']
+
+export default sirenActionController

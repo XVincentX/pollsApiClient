@@ -5,7 +5,7 @@ import textArray from "./questions/textArray.html!text"
 const moduleName = 'formlyTemplates'
 
 angular.module(moduleName, [])
-.config(function(formlyConfigProvider) {
+.config(['formlyConfigProvider', function(formlyConfigProvider) {
   formlyConfigProvider.setType({
     name: 'create.text',
     template: text,
@@ -28,6 +28,6 @@ angular.module(moduleName, [])
     }
   })
 
-})
+}])
 
 export default moduleName
