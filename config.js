@@ -17,17 +17,17 @@ System.config({
   "map": {
     "angular": "npm:angular@1.4.1",
     "angular-animate": "npm:angular-animate@1.4.1",
-    "angular-formly": "npm:angular-formly@6.16.0",
+    "angular-formly": "npm:angular-formly@6.16.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.23",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.1",
     "api-check": "npm:api-check@7.5.0",
-    "babel": "npm:babel-core@5.6.11",
-    "babel-runtime": "npm:babel-runtime@5.6.11",
-    "clean-css": "npm:clean-css@3.3.4",
+    "babel": "npm:babel-core@5.6.15",
+    "babel-runtime": "npm:babel-runtime@5.6.15",
+    "clean-css": "npm:clean-css@3.3.5",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "es6-promise": "npm:es6-promise@2.3.0",
-    "lodash": "npm:lodash@3.9.3",
+    "lodash": "npm:lodash@3.10.0",
     "ng-promise-status": "npm:ng-promise-status@0.1.2",
     "text": "github:systemjs/plugin-text@0.0.2",
     "github:angular/bower-angular-mocks@1.4.1": {
@@ -37,7 +37,7 @@ System.config({
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.2.2"
+      "buffer": "npm:buffer@3.3.0"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -71,12 +71,7 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
-    "github:systemjs/plugin-css@0.1.12": {
-      "clean-css": "npm:clean-css@3.1.9",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "path": "github:jspm/nodelibs-path@0.1.0"
-    },
-    "npm:URIjs@1.15.1": {
+    "npm:URIjs@1.15.2": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:amdefine@0.1.1": {
@@ -85,15 +80,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-formly@6.15.1": {
-      "angular": "npm:angular@1.4.1",
-      "path": "github:jspm/nodelibs-path@0.1.0"
-    },
-    "npm:angular-formly@6.15.2": {
-      "angular": "npm:angular@1.4.1",
-      "path": "github:jspm/nodelibs-path@0.1.0"
-    },
-    "npm:angular-formly@6.16.0": {
+    "npm:angular-formly@6.16.1": {
       "angular": "npm:angular@1.4.1",
       "path": "github:jspm/nodelibs-path@0.1.0"
     },
@@ -109,37 +96,15 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.5.8": {
+    "npm:babel-runtime@5.6.15": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:babel-runtime@5.6.11": {
-      "process": "github:jspm/nodelibs-process@0.1.1"
-    },
-    "npm:babel-runtime@5.6.3": {
-      "process": "github:jspm/nodelibs-process@0.1.1"
-    },
-    "npm:babel-runtime@5.6.5": {
-      "process": "github:jspm/nodelibs-process@0.1.1"
-    },
-    "npm:buffer@3.2.2": {
+    "npm:buffer@3.3.0": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
     },
-    "npm:clean-css@3.1.9": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "commander": "npm:commander@2.6.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "http": "github:jspm/nodelibs-http@1.7.1",
-      "https": "github:jspm/nodelibs-https@0.1.0",
-      "os": "github:jspm/nodelibs-os@0.1.0",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.1",
-      "source-map": "npm:source-map@0.1.43",
-      "url": "github:jspm/nodelibs-url@0.1.0",
-      "util": "github:jspm/nodelibs-util@0.1.0"
-    },
-    "npm:clean-css@3.3.4": {
+    "npm:clean-css@3.3.5": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "commander": "npm:commander@2.8.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -151,12 +116,6 @@ System.config({
       "source-map": "npm:source-map@0.4.2",
       "url": "github:jspm/nodelibs-url@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
-    },
-    "npm:commander@2.6.0": {
-      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
-      "events": "github:jspm/nodelibs-events@0.1.1",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:commander@2.8.1": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
@@ -185,17 +144,17 @@ System.config({
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
     "npm:hy-res@0.0.16": {
-      "URIjs": "npm:URIjs@1.15.1",
+      "URIjs": "npm:URIjs@1.15.2",
       "form-urlencoded": "npm:form-urlencoded@0.0.7",
       "http-link": "npm:http-link@0.3.0",
-      "lodash": "npm:lodash@3.9.3",
+      "lodash": "npm:lodash@3.10.0",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:lodash@3.9.3": {
+    "npm:lodash@3.10.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:ng-promise-status@0.1.2": {
@@ -222,12 +181,6 @@ System.config({
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31",
       "util": "github:jspm/nodelibs-util@0.1.0"
-    },
-    "npm:source-map@0.1.43": {
-      "amdefine": "npm:amdefine@0.1.1",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:source-map@0.4.2": {
       "amdefine": "npm:amdefine@0.1.1",
