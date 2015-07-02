@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production')
     })
     .then(function() {
       console.log("Bundle creation")
-      return jspm.bundleSFX('app/main', 'build.js', {sourceMaps: false, inject: false, minify: true, mangle: false})
+      return jspm.bundleSFX('app/main', 'build.js', {sourceMaps: false, inject: false, minify: true, mangle: true})
     })
     .then(function() {
       var css = fs.readFileSync('./build.css', {encoding: 'utf8' })
