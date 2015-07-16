@@ -6,7 +6,7 @@ PollsApiClient made in AngularJs.
 
 A simple hypermedia enabled application on top of [Polls Api](http://docs.pollsapi.apiary.io) by [Apiary](http://www.apiary.io).
 
-Want to know more? Read the [blog post serie](http://localhost:4000/2015/05/30/hypermedia-client-in-angularjs.html)
+Want to know more? Read the [blog post serie](http://vncz.js.org/hypermedia-client-in-angularjs/)
 
 # Installation instructions
 
