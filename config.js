@@ -17,12 +17,12 @@ System.config({
   "map": {
     "angular": "npm:angular@1.4.3",
     "angular-animate": "npm:angular-animate@1.4.3",
-    "angular-formly": "npm:angular-formly@6.18.1",
-    "angular-hy-res": "npm:angular-hy-res@0.0.26",
+    "angular-formly": "npm:angular-formly@6.20.1",
+    "angular-hy-res": "npm:angular-hy-res@0.0.27",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.3",
     "api-check": "npm:api-check@7.5.0",
-    "babel": "npm:babel-core@5.7.4",
-    "babel-runtime": "npm:babel-runtime@5.7.0",
+    "babel": "npm:babel-core@5.8.3",
+    "babel-runtime": "npm:babel-runtime@5.8.3",
     "clean-css": "npm:clean-css@3.3.6",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
@@ -80,13 +80,13 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-formly@6.18.1": {
+    "npm:angular-formly@6.20.1": {
       "angular": "npm:angular@1.4.3",
       "path": "github:jspm/nodelibs-path@0.1.0"
     },
-    "npm:angular-hy-res@0.0.26": {
+    "npm:angular-hy-res@0.0.27": {
       "angular": "npm:angular@1.4.3",
-      "hy-res": "npm:hy-res@0.0.18",
+      "hy-res": "npm:hy-res@0.0.19",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -96,7 +96,7 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.7.0": {
+    "npm:babel-runtime@5.8.3": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:buffer@3.3.1": {
@@ -143,7 +143,7 @@ System.config({
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
-    "npm:hy-res@0.0.18": {
+    "npm:hy-res@0.0.19": {
       "URIjs": "npm:URIjs@1.15.2",
       "form-urlencoded": "npm:form-urlencoded@0.0.7",
       "http-link": "npm:http-link@0.3.0",

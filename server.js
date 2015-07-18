@@ -1,8 +1,9 @@
 var express = require('express'),
     cors = require('cors'),
     cons = require('consolidate'),
-    compress = require('compression')();
-    app = express();
+    compress = require('compression')(),
+    prerender = require('prerender-node'),
+    app = express()
 
 
 
@@ -14,6 +15,7 @@ app.use(compress);
 app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
+app.use(prerender);
 
 app.get('/', function (req, res) {
   res.render('index', {env: process.env.NODE_ENV});

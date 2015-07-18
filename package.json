@@ -31,7 +31,7 @@
       "angular": "npm:angular@^1.4.0",
       "angular-animate": "npm:angular-animate@^1.4.0",
       "angular-formly": "npm:angular-formly@^6.12.0-beta.1",
-      "angular-hy-res": "npm:angular-hy-res@^0.0.26",
+      "angular-hy-res": "npm:angular-hy-res@^0.0.27",
       "angular-mocks": "github:angular/bower-angular-mocks@^1.3.15",
       "api-check": "npm:api-check@^7.2.4",
       "clean-css": "npm:clean-css@^3.3.4",
@@ -48,14 +48,14 @@
     }
   },
   "devDependencies": {
-    "chai": "^3.0.0",
+    "chai": "^3.2.0",
     "chai-as-promised": "^5.1.0",
     "faker": "^2.1.5",
-    "karma": "^0.13.0",
+    "karma": "^0.13.3",
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
     "karma-chrome-launcher": "^0.2.0",
-    "karma-jspm": "^1.1.4",
+    "karma-jspm": "^2.0.1-beta.1",
     "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.0.2",
     "mocha": "^2.2.1",
@@ -70,6 +70,7 @@
     "ejs": "^2.3.1",
     "express": "^4.13.0",
     "jspm": "^0.15.7",
-    "postcss": "^4.1.13"
+    "postcss": "^4.1.13",
+    "prerender-node": "^2.0.1"
   }
 }
