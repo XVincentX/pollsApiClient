@@ -10,6 +10,6 @@
 
 <script type="text/ng-template" id="buttonBar.html">
   <div class="flexBox">
-    <a class="btn" href ng-repeat="link in ctrl.polls.links track by link.rel[0]" ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>
+    <a class="btn" ng-class="{prevButton: link.rel[0] == 'prev', nextButton: link.rel[0] == 'next'}" href ng-repeat="link in ctrl.polls.links track by link.rel[0]" ng-click="ctrl.followLink(link)">{{::link.rel[0]}}</a>
   </div>
 </script>

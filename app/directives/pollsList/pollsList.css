@@ -37,12 +37,12 @@
   text-transform: capitalize;
 }
 
-.pollsList a:last-of-type:after
+.pollsList a.nextButton:after
 {
    content: '  \00bb'
 }
 
-.pollsList a:first-of-type:before
+.pollsList a.prevButton:first-of-type:before
 {
    content: '\00ab  '
 }
