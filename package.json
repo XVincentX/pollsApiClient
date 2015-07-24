@@ -71,6 +71,6 @@
     "express": "^4.13.0",
     "jspm": "^0.15.7",
     "postcss": "^4.1.13",
-    "prerender-node": "^2.0.1"
+    "prerender-node": "^2.0.2"
   }
 }
