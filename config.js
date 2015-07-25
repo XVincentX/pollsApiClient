@@ -19,7 +19,7 @@ System.config({
     "angular-animate": "npm:angular-animate@1.4.3",
     "angular-formly": "npm:angular-formly@6.20.1",
     "angular-hy-res": "npm:angular-hy-res@0.0.27",
-    "angular-mocks": "github:angular/bower-angular-mocks@1.4.3",
+    "angular-mocks": "npm:angular-mocks@1.4.3",
     "api-check": "npm:api-check@7.5.0",
     "babel": "npm:babel-core@5.8.3",
     "babel-runtime": "npm:babel-runtime@5.8.3",
@@ -30,9 +30,6 @@ System.config({
     "lodash": "npm:lodash@3.10.0",
     "ng-promise-status": "npm:ng-promise-status@0.1.2",
     "text": "github:systemjs/plugin-text@0.0.2",
-    "github:angular/bower-angular-mocks@1.4.3": {
-      "angular": "github:angular/bower-angular@1.4.3"
-    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
