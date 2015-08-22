@@ -42,16 +42,16 @@
       "text": "github:systemjs/plugin-text@^0.0.2"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.1.13",
-      "babel-runtime": "npm:babel-runtime@^5.1.13",
-      "core-js": "npm:core-js@^0.9.4"
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "core-js": "npm:core-js@^1.1.0"
     }
   },
   "devDependencies": {
     "chai": "^3.2.0",
     "chai-as-promised": "^5.1.0",
     "faker": "^2.1.5",
-    "karma": "^0.13.3",
+    "karma": "^0.13.9",
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
     "karma-chrome-launcher": "^0.2.0",
@@ -69,8 +69,8 @@
     "cors": "^2.6.1",
     "ejs": "^2.3.1",
     "express": "^4.13.0",
-    "jspm": "^0.15.7",
-    "postcss": "^4.1.13",
+    "jspm": "^0.16.0",
+    "postcss": "^5.0.1",
     "prerender-node": "^2.0.2"
   }
 }
