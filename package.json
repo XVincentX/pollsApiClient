@@ -59,7 +59,7 @@
     "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.0.2",
     "mocha": "^2.2.1",
-    "protractor": "^2.1.0"
+    "protractor": "^2.2.0"
   },
   "dependencies": {
     "autoprefixer": "^5.2.0",
@@ -69,8 +69,8 @@
     "cors": "^2.6.1",
     "ejs": "^2.3.1",
     "express": "^4.13.0",
-    "jspm": "^0.16.0",
-    "postcss": "^5.0.1",
+    "jspm": "^0.16.2",
+    "postcss": "^5.0.2",
     "prerender-node": "^2.0.2"
   }
 }
