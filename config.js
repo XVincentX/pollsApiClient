@@ -13,16 +13,16 @@ System.config({
   separateCSS: true,
 
   map: {
-    "angular": "npm:angular@1.4.4",
-    "angular-animate": "npm:angular-animate@1.4.4",
-    "angular-formly": "npm:angular-formly@6.23.7",
+    "angular": "npm:angular@1.4.5",
+    "angular-animate": "npm:angular-animate@1.4.5",
+    "angular-formly": "npm:angular-formly@6.24.23",
     "angular-hy-res": "npm:angular-hy-res@0.0.27",
-    "angular-mocks": "npm:angular-mocks@1.4.4",
+    "angular-mocks": "npm:angular-mocks@1.4.5",
     "api-check": "npm:api-check@7.5.0",
     "babel": "npm:babel-core@5.8.23",
     "babel-runtime": "npm:babel-runtime@5.8.20",
     "clean-css": "npm:clean-css@3.4.1",
-    "core-js": "npm:core-js@1.1.1",
+    "core-js": "npm:core-js@1.1.3",
     "css": "github:systemjs/plugin-css@0.1.15",
     "es6-promise": "npm:es6-promise@2.3.0",
     "lodash": "npm:lodash@3.10.1",
@@ -75,20 +75,20 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-animate@1.4.4": {
+    "npm:angular-animate@1.4.5": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-formly@6.23.7": {
-      "angular": "npm:angular@1.4.4",
+    "npm:angular-formly@6.24.23": {
+      "angular": "npm:angular@1.4.5",
       "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "npm:angular-hy-res@0.0.27": {
-      "angular": "npm:angular@1.4.4",
+      "angular": "npm:angular@1.4.5",
       "hy-res": "npm:hy-res@0.0.19",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
-    "npm:angular@1.4.4": {
+    "npm:angular@1.4.5": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:assert@1.3.0": {
@@ -123,7 +123,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:core-js@1.1.1": {
+    "npm:core-js@1.1.3": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
