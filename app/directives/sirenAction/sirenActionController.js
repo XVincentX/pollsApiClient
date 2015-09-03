@@ -20,7 +20,7 @@ class sirenActionController extends executeAction {
         type: this.action.name + '.' + field.type,
         key: field.name,
         templateOptions: {
-          label: field.name
+          label: field.name,
         },
       };
     }).value();

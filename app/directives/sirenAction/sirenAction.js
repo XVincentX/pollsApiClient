@@ -1,5 +1,5 @@
 import template from './sirenAction.template.html!text';
-import controller from './sirenActionController';;
+import controller from './sirenActionController';
 
 export default class sirenActionDirective {
     constructor() {
@@ -12,5 +12,5 @@ export default class sirenActionDirective {
         this.bindToController = true;
         this.controllerAs = 'ctrl';
         this.controller = controller;
-    }
+      }
 }
