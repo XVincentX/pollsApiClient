@@ -15,15 +15,15 @@ System.config({
   map: {
     "angular": "npm:angular@1.4.5",
     "angular-animate": "npm:angular-animate@1.4.5",
-    "angular-formly": "npm:angular-formly@6.24.23",
+    "angular-formly": "npm:angular-formly@6.26.9",
     "angular-hy-res": "npm:angular-hy-res@0.0.27",
     "angular-mocks": "npm:angular-mocks@1.4.5",
     "api-check": "npm:api-check@7.5.0",
-    "babel": "npm:babel-core@5.8.23",
-    "babel-runtime": "npm:babel-runtime@5.8.20",
-    "clean-css": "npm:clean-css@3.4.1",
-    "core-js": "npm:core-js@1.1.3",
-    "css": "github:systemjs/plugin-css@0.1.15",
+    "babel": "npm:babel-core@5.8.24",
+    "babel-runtime": "npm:babel-runtime@5.8.24",
+    "clean-css": "npm:clean-css@3.4.3",
+    "core-js": "npm:core-js@1.1.4",
+    "css": "github:systemjs/plugin-css@0.1.16",
     "es6-promise": "npm:es6-promise@2.3.0",
     "lodash": "npm:lodash@3.10.1",
     "ng-promise-status": "npm:ng-promise-status@0.1.2",
@@ -32,7 +32,7 @@ System.config({
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.4.3"
+      "buffer": "npm:buffer@3.5.0"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -78,8 +78,9 @@ System.config({
     "npm:angular-animate@1.4.5": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:angular-formly@6.24.23": {
+    "npm:angular-formly@6.26.9": {
       "angular": "npm:angular@1.4.5",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "npm:angular-hy-res@0.0.27": {
@@ -94,15 +95,15 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.8.20": {
+    "npm:babel-runtime@5.8.24": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:buffer@3.4.3": {
+    "npm:buffer@3.5.0": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
     },
-    "npm:clean-css@3.4.1": {
+    "npm:clean-css@3.4.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "commander": "npm:commander@2.8.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -123,7 +124,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:core-js@1.1.3": {
+    "npm:core-js@1.1.4": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
