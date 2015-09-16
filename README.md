@@ -47,7 +47,12 @@ Run e2e tests: (protractor)
 npm run e2etests
 ```
 
-Run all the tests: (karma + protractor)
+Lint the code (following the airbnb rules)
+```
+npm run lint
+```
+
+Run all the tests: (linting + karma + protractor)
 ```bash
 npm test
 ```

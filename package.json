@@ -4,10 +4,11 @@
   "description": "Polls client in AngularJS",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start && ./node_modules/.bin/protractor protractor.conf.js",
-    "frontendtests": "./node_modules/karma/bin/karma start",
-    "e2etests": "./node_modules/.bin/protractor protractor.conf.js",
-    "postinstall": "node deploy.js"
+    "e2etests": "protractor protractor.conf.js",
+    "frontendtests": "karma start",
+    "postinstall": "node deploy.js",
+    "test": "npm run lint && karma start && protractor protractor.conf.js",
+    "lint": "eslint app --ext .js,.es6 app"
   },
   "engines": {
     "node": "0.12.7",
@@ -18,8 +19,8 @@
     "url": "https://github.com/XVincentX/pollsApiClient"
   },
   "keywords": [
-    "Polls",
-    "Angular"
+    "Angular",
+    "Polls"
   ],
   "author": "Vincenzo Chianese",
   "license": "MIT",
@@ -48,8 +49,11 @@
     }
   },
   "devDependencies": {
+    "babel-eslint": "^4.1.2",
     "chai": "^3.2.0",
     "chai-as-promised": "^5.1.0",
+    "eslint": "^1.4.3",
+    "eslint-config-airbnb": "0.0.8",
     "faker": "^3.0.1",
     "karma": "^0.13.9",
     "karma-chai": "^0.1.0",
@@ -58,19 +62,19 @@
     "karma-jspm": "^2.0.1-beta.1",
     "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.0.2",
-    "mocha": "^2.3.0",
+    "mocha": "^2.3.2",
     "protractor": "^2.2.0"
   },
   "dependencies": {
-    "autoprefixer": "^5.2.0",
-    "autoprefixer-core": "^5.2.1",
+    "autoprefixer": "^6.0.2",
+    "autoprefixer-core": "^6.0.1",
     "compression": "^1.5.0",
     "consolidate": "^0.13.1",
     "cors": "^2.6.1",
-    "ejs": "^2.3.1",
+    "ejs": "^2.3.4",
     "express": "^4.13.0",
     "jspm": "^0.16.2",
-    "postcss": "^5.0.3",
+    "postcss": "^5.0.5",
     "prerender-node": "^2.0.2"
   }
 }
