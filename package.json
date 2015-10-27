@@ -10,8 +10,8 @@
     "postinstall": "node deploy.js"
   },
   "engines": {
-    "node": "4.1.1",
-    "npm": "3.3.6"
+    "node": "4.2.1",
+    "npm": "3.3.9"
   },
   "repository": {
     "type": "git",
