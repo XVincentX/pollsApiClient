@@ -7,7 +7,7 @@
     "test": "karma start && protractor protractor.conf.js",
     "frontendtests": "karma start",
     "e2etests": "protractor protractor.conf.js",
-    "postinstall": "jspm install && jspm bundle-sfx --minify --mangle app/main build.js && postcss --use autoprefixer build.css -o build.css"
+    "postinstall": "jspm install && jspm bundle-sfx app/main build.js --minify --skip-source-maps && postcss --use autoprefixer build.css -o build.css"
   },
   "engines": {
     "node": "4.2.1",
@@ -42,9 +42,9 @@
       "text": "github:systemjs/plugin-text@^0.0.2"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.22",
-      "babel-runtime": "npm:babel-runtime@^5.8.20",
-      "core-js": "npm:core-js@^1.1.0"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
   },
   "devDependencies": {
