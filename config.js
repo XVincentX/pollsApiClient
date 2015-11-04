@@ -19,10 +19,10 @@ System.config({
     "angular-hy-res": "npm:angular-hy-res@0.0.27",
     "angular-mocks": "npm:angular-mocks@1.4.7",
     "api-check": "npm:api-check@7.5.5",
-    "babel": "npm:babel-core@5.8.29",
+    "babel": "npm:babel-core@5.8.33",
     "babel-runtime": "npm:babel-runtime@5.8.29",
     "clean-css": "npm:clean-css@3.4.6",
-    "core-js": "npm:core-js@1.2.3",
+    "core-js": "npm:core-js@1.2.5",
     "css": "github:systemjs/plugin-css@0.1.19",
     "es6-promise": "npm:es6-promise@2.3.0",
     "lodash": "npm:lodash@3.10.1",
@@ -124,7 +124,11 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+<<<<<<< 7fe41e88e693ea2319c3e8211e089a92c575f4e8
     "npm:core-js@1.2.3": {
+=======
+    "npm:core-js@1.2.5": {
+>>>>>>> Package update
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
