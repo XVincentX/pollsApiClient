@@ -16,6 +16,7 @@ class pollController extends executeAction {
   }
 
   vote(choice) {
+    this.poll.total++;
     choice[1].votes++;
   }
 
