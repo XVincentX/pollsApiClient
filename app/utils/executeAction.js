@@ -16,7 +16,7 @@ class executeAction
           if (_.isUndefined(result))
             result = arguments
 
-          this[action.name].apply(this, [result])
+          this[action.name].apply(undefined, [result])
         }
     })
     .catch(error => {
