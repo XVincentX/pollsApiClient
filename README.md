@@ -8,6 +8,8 @@ A simple hypermedia enabled application on top of [Polls Api](http://docs.pollsa
 
 Want to know more? Read the [blog post serie](http://vncz.js.org/hypermedia-client-in-angularjs/)
 
+Want a mobile version? I [developed one as well](https://github.com/XVincentX/pollsapiclient) using react-native.
+
 # Installation instructions
 
 1. Install jspm
